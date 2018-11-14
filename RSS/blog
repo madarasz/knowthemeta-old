@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Know the Meta</title>
+    <link>http://www.knowthemeta.com/RSS/blog</link>
+    <description>Blog anout the Android Netrunner meta</description>
+    <item>
+      <title>Rotation and Revised Core</title>
+      <link>http://www.knowthemeta.com/Blog/rotation</link>
+      <content:encoded>Wow, so many changes. You thought the rotation is going to shake things up? Add the Revised Core Set into the mix and guess again. Netrunner is being reborn. Stay with me as I contemplate about what is happening and crunch the numbers.</content:encoded>
+      <pubDate>Mon, 11 Sep 2017 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>History of Anarch - part 2 + MWL thoughts</title>
+      <link>http://www.knowthemeta.com/Blog/history-of-anarch-part-2</link>
+      <content:encoded>This is the second part of the Anarch history article. We left off at the biggest orange dominance there ever was. Something was bound to happen, what was it? Uncover the truth below. (Jump to thoughts on MWL)</content:encoded>
+      <pubDate>Thu, 13 Apr 2017 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>History of Anarch - part 1</title>
+      <link>http://www.knowthemeta.com/Blog/history-of-anarch-part-1</link>
+      <content:encoded>These days the runner meta is saturated with Anarchs. I wanted to make an article about how we got here and why. I looked at the data I have, crunched the numbers, dug up some decks and tried to piece together the big picture. Here is the first part of the story.</content:encoded>
+      <pubDate>Tue, 11 Apr 2017 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>The rise of Cerebral Imaging</title>
+      <link>http://www.knowthemeta.com/Blog/rise-of-cerebral-imaging</link>
+      <content:encoded>This article focuses on the recent rise and success of&#xD;
+Cerebral Imaging: Infinite Frontiers. I will look the statistics&#xD;
+provided by Know the Meta and try to explain this phenomenon. Fair warning: I am not an experienced&#xD;
+CI player and I will not cover how to play these decks.</content:encoded>
+      <pubDate>Sun, 19 Feb 2017 23:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>New MWL and other changes</title>
+      <link>http://www.knowthemeta.com/Blog/mwl-2</link>
+      <content:encoded>The new MWL, FAQ and Tournament Regulations have arrived recently. Is everybody excited? Is it the end of NBN and Anarch? I know you have fetishes for charts and numbers. I have a handful of those, that's why you are here. TL;DR version</content:encoded>
+      <pubDate>Tue, 12 Jul 2016 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Thoughts on the "NAPD Most Wanted List"</title>
+      <link>http://www.knowthemeta.com/Blog/NAPD-most-wanted</link>
+      <content:encoded>Wow. The meta will be shaken. FFG announced some heavy stuff in their new Tournament Rules. A couple of cards will be nerfed, they reduce the Identity's influence count by 1 per each copy. This means the end of the currently popular archetypes. Influence has never been so tight. TL;DR version</content:encoded>
+      <pubDate>Fri, 01 Jan 2016 23:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Reminiscing the Sansan Cycle [CORP]</title>
+      <link>http://www.knowthemeta.com/Blog/sansan-corp</link>
+      <content:encoded>This is my second article on the SanSan cycle. I'm reviewing the most used corporation cards, focusing on current day competitive play. I sense a lot of pain and headache coming at the runners, I hope they are prepared. Fire up the ICE and rez those assets, we are going in!</content:encoded>
+      <pubDate>Thu, 24 Dec 2015 23:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Reminiscing the Sansan Cycle [RUNNER]</title>
+      <link>http://www.knowthemeta.com/Blog/sansan-runner</link>
+      <content:encoded>Ah, the SanSan cycle! Each Data Pack is inspired by a specific part of the famous American megacity in the Android universe. What did the SanSan cycle bring us in addition to the flavor? Well, cards of course! In this article, I will be exploring the most used and most useful cards of the cycle focusing on current day competitive play.</content:encoded>
+      <pubDate>Fri, 18 Dec 2015 23:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Analyzing Andromeda</title>
+      <link>http://www.knowthemeta.com/Blog/analyzing-andromeda</link>
+      <content:encoded>Blast from the past. An old post of mine from the end of the Spin cycle. Andromeda decks were quite strong and the time was right for a statistical analysis of a popular archetype.</content:encoded>
+      <pubDate>Sat, 26 Apr 2014 22:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

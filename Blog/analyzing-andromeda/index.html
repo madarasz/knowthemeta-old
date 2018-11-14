@@ -1,0 +1,572 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Analyzing Andromeda - Know the Meta - Android: Netrunner</title>
+    <meta name="description" content="Know the Meta - providing statistical information on the metagame of Android: Netrunner cardgame." />
+    <meta name="keywords" content="Netrunner, Android, meta, cardgame, decks, cards, identities, factions, winning, top" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" color="#5bbad5" href="/safari-pinned-tab.svg" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/static/css/ktm3.concat.min.css" />
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-bottom"};
+    </script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+</head>
+<body>
+    <body>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/#top"><img src="/static/img/knowthemeta20x20.png" /></a>
+                <a class="navbar-brand" href="/#top">Know the Meta - Netrunner</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/#top">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tournament Drilldown<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Magnum Opus/">Magnum Opus</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/R&amp;R MWL 2.2/">R&amp;R MWL 2.2</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Reign and Reverie/">Reign and Reverie</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Kampala Ascendent/">Kampala Ascendent</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Whispers in Nalubaale/">Whispers in Nalubaale</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Devil and the Dragon/">The Devil and the Dragon</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Council of the Crest/">Council of the Crest</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Down the White Nile/">Down the White Nile</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Sovereign Sight/">Sovereign Sight</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Revised Core Set/">Revised Core Set</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Crimson Dust/">Crimson Dust</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Free Mars/">Free Mars</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Blood and Water/">Blood and Water</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Earth&#39;s Scion/">Earth&#39;s Scion</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Terminal Directive/">Terminal Directive</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Station One/">Station One</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Daedalus Complex/">Daedalus Complex</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Quorum/">Quorum</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Martial Law/">Martial Law</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Intervention/">Intervention</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Escalation/">Escalation</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Blood Money/">Blood Money</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/23 Seconds/">23 Seconds</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Fear the Masses/">Fear the Masses</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Liberated Mind/">The Liberated Mind</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Salsette Island/">Salsette Island</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Democracy and Dogma/">Democracy and Dogma</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Business First/">Business First</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Kala Ghoda/">Kala Ghoda</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/D&amp;D, post-MWL/">D&amp;D, post-MWL</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Data and Destiny/">Data and Destiny</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Universe of Tomorrow/">The Universe of Tomorrow</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Old Hollywood/">Old Hollywood</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Underway/">The Underway</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Chrome City/">Chrome City</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Breaker Bay/">Breaker Bay</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Valley/">The Valley</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Order and Chaos/">Order and Chaos</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Source/">The Source</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/All That Remains/">All That Remains</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Up and Over/">Up and Over</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="/Cards">Cards</a></li>
+                    <li><a href="/Buyers-Guide">Buyer's Guide</a></li>
+                    <li><a href="/Blog">Blog</a></li>
+                    <li><a href="/Info">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+    <div class="container">
+        <h3 class="page-header">
+            <div class="pull-right">
+        <div class="pull-right">
+            <a href="https://www.facebook.com/netrunnerknowthemeta/"><img src="/static/img/social-fb.png" /></a>
+            <a href="https://twitter.com/knowthemeta"><img src="/static/img/social-twitter.png" /></a>
+            <a href="http://forum.stimhack.com/t/know-the-meta/6306"><img src="/static/img/social-stimhack.png" /></a>
+        </div>
+    </div>
+            <span>Analyzing Andromeda</span><br />
+            <small><span>2014.04.27.</span> - <span>Double Time (Spin cycle)</span></small>
+        </h3>
+        <div class="row">
+            <div class="col-md-8 col-xs-12">
+                <div class="row">
+                    <div class="col-md-3 teaser-col">
+                        <img src="/static/img/blog/sil-andromeda.png" alt="Analyzing Andromeda" />
+                    </div>
+                    <div class="col-md-9 teaser-col">Blast from the past. An old post of mine from the end of the <strong>Spin cycle</strong>. Andromeda decks were quite strong and the time was right for a statistical analysis of a popular archetype.</div>
+                </div>
+                <div class="col-xs-12 blog-text"><div class="blog-image">
+    <a href="/Cards/Andromeda: Dispossessed Ristie/"><img src="/static/img/cards/netrunner-andromeda-dispossessed-ristie.png" alt="Netrunner Andromeda: Dispossessed Ristie" class="card-small" /></a>
+</div>
+<p>
+    In this article I'm analyzing the card pool of tournament winning Andromeda runner decks. To do this, I'm using the
+    deck lists provided by <a href="http://stimhack.com" target="_blank" rel="nofollow">Stimhack.</a>
+</p>
+<p>
+    I'm limiting the decks to the <strong>Double Time</strong> and <strong>Fear and Loathing</strong> time period. It
+    still gives a relatively big amount of data, and the cards of the last data pack didn't really make it into the
+    most popular builds. (If you ask me Andromeda builds haven't really changed much since <strong>Opening Moves</strong>.)
+</p>
+<p>
+    Andromeda decks are quite uniform, usually they don't show as much variance as other identities, so they are ideal
+    for statistical analysis. There is only one build that differs  from the standard Andromeda deck, that is the
+    <a href="/Cards/Blackguard/" class="link-card">Blackguard</a> build. I will filter
+    these out, and it still leaves us with 44 decks out of the 47 in total.
+</p>
+<p>
+    I'm providing two data after each card in brackets. Average number and percentage of being used in decks. For all
+    the cards, see the <a href="#summarytable">summary table</a> at the end of this article. So, let's see the most
+    popular cards broken down by type!
+</p>
+<hr />
+<h4>Events</h4>
+<p>This includes burst economy and awesome criminal events.</p>
+<div class="row blog-image">
+    <div class="col-md-4 col-xs-12">
+        <a href="/Cards/Account Siphon/"><img src="/static/img/cards/netrunner-account-siphon.png" alt="Netrunner Account Siphon" class="card-small" /></a>
+    </div>
+    <div class="col-md-4 col-xs-12">
+        <a href="/Cards/Dirty Laundry/"><img src="/static/img/cards/netrunner-dirty-laundry.png" alt="Netrunner Dirty Laundry" class="card-small" /></a>
+    </div>
+    <div class="col-md-4 col-xs-12">
+        <a href="/Cards/Sure Gamble/"><img src="/static/img/cards/netrunner-sure-gamble.png" alt="Netrunner Sure Gamble" class="card-small" /></a>
+    </div>
+</div>
+<p>
+    We have <a href="/Cards/Account Siphon/" class="link-card">Account Siphon</a> [2.93; 100%],
+    <a href="/Cards/Dirty Laundry/" class="link-card">Dirty Laundry</a> [2.93; 100%] and
+    <a href="/Cards/Sure Gamble/" class="link-card">Sure Gamble</a> [2.93; 98%] as the
+    top money making cards. Usually Account Siphon by itself convinces people to play criminal and makes corporations
+    grind their teeth. It's one of the best cards ever, many players consider it overpowered.
+</p>
+<div class="row blog-image">
+    <div class="col-md-4 col-xs-12">
+        <a href="/Cards/Special Order/"><img src="/static/img/cards/netrunner-special-order.png" alt="Netrunner Special Order" class="card-small" /></a>
+    </div>
+    <div class="col-md-4 col-xs-12">
+        <a href="/Cards/Emergency Shutdown/"><img src="/static/img/cards/netrunner-emergency-shutdown.png" alt="Netrunner Emergency Shutdown" class="card-small" /></a>
+    </div>
+    <div class="col-md-4 col-xs-12">
+        <a href="/Cards/Inside Job/"><img src="/static/img/cards/netrunner-inside-job.png" alt="Netrunner Inside Job" class="card-small" /></a>
+    </div>
+</div>
+<div class="row blog-image">
+    <div class="col-md-6 col-xs-12">
+        <a href="/Cards/Hostage/"><img src="/static/img/cards/netrunner-hostage.png" alt="Netrunner Hostage" class="card-small" /></a>
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <a href="/Cards/Easy Mark/"><img src="/static/img/cards/netrunner-easy-mark.png" alt="Netrunner Easy Mark" class="card-small" /></a>
+    </div>
+</div>
+<p>
+    Other awesome criminal events include
+    <a href="/Cards/Special Order/" class="link-card">Special Order</a> [2.77; 100%],
+    <a href="/Cards/Emergency Shutdown/" class="link-card">Emergency Shutdown</a> [2.36; 98%],
+    <a href="/Cards/Inside Job/" class="link-card">Inside Job</a> [2.22; 95%],
+    <a href="/Cards/Hostage/" class="link-card">Hostage</a> [1.09; 57%] and
+    <a href="/Cards/Easy Mark/" class="link-card">Easy Mark</a> [0.98; 39%].
+    Tutoring for the right breaker or contact helps criminals a lot.
+</p>
+<p>
+    <a href="/Cards/Forged Activation Orders/" class="link-card">Forged Activation Orders</a> [0.62; 32%] and
+    <a href="/Cards/Infiltration/" class="link-card">Infiltration</a> [0.53; 30%]
+    do not see as much play as they used to.
+</p>
+<hr />
+<h4>Hardware</h4>
+<div class="row blog-image">
+    <div class="col-md-4 col-xs-12">
+        <a href="/Cards/Desperado/"><img src="/static/img/cards/netrunner-desperado.png" alt="Netrunner Desperado" class="card-small" /></a>
+    </div>
+    <div class="col-md-4 col-xs-12">
+        <a href="/Cards/Plascrete Carapace/"><img src="/static/img/cards/netrunner-plascrete-carapace.png" alt="Netrunner Plascrete Carapace" class="card-small" /></a>
+    </div>
+    <div class="col-md-4 col-xs-12">
+        <a href="/Cards/R&amp;D Interface/"><img src="/static/img/cards/netrunner-rd-interface.png" alt="Netrunner R&amp;D Interface" class="card-small" /></a>
+    </div>
+</div>
+<p>
+    <a href="/Cards/Desperado/" class="link-card">Desperado</a> [2.80; 100%] is a
+    must have and sadly, you better have three of it. In my experience, this is the card that nets you the most credits.
+    I often mulligan if I cannot see it in my opening hand.
+    <a href="/Cards/Plascrete Carapace/" class="link-card">Plascrete Carapace</a> [2.36; 95%] is
+    also an auto-include because of
+    <a href="/Cards/Scorched Earth/" class="link-card">Scorched Earth</a>s and
+    <a href="/Cards/Punitive Counterstrike/" class="link-card">Punitive Counterstrike</a>s.
+    Usually two is enough because of Andromeda's ability.
+    <a href="/Cards/R&amp;D Interface/" class="link-card">R&amp;D Interface</a> [1.84; 84%] is
+    needed to maintain a lock on R&amp;D, which is quite important when playing against a fast advance corporation.
+    Other hardware are rarely ever used.
+</p>
+<hr />
+<h4>Resources</h4>
+<div class="row blog-image">
+    <div class="col-md-3 col-xs-12">
+        <a href="/Cards/Kati Jones/"><img src="/static/img/cards/netrunner-kati-jones.png" alt="Netrunner Kati Jones" class="card-small" /></a>
+    </div>
+    <div class="col-md-3 col-xs-12">
+        <a href="/Cards/John Masanori/"><img src="/static/img/cards/netrunner-john-masanori.png" alt="Netrunner John Masanori" class="card-small" /></a>
+    </div>
+    <div class="col-md-3 col-xs-12">
+        <a href="/Cards/Professional Contacts/"><img src="/static/img/cards/netrunner-professional-contacts.png" alt="Netrunner Professional Contacts" class="card-small" /></a>
+    </div>
+    <div class="col-md-3 col-xs-12">
+        <a href="/Cards/Mr. Li/"><img src="/static/img/cards/netrunner-mr.-li.png" alt="Netrunner Mr. Li" class="card-small" /></a>
+    </div>
+</div>
+<p>
+    Andromeda decks usually have a couple of Connection type resources.
+    <a href="/Cards/Kati Jones/" class="link-card">Kati Jones</a> [1.66; 89%]
+    provides the runner with credits. As for additional card draw, players tend to use one of the following:
+    <a href="/Cards/John Masanori/" class="link-card">John Masanori</a> [0.34; 30%],
+    <a href="/Cards/Professional Contacts/" class="link-card">Professional Contacts</a> [0.34; 34%] or
+    <a href="/Cards/Mr. Li/" class="link-card">Mr. Li</a> [0.27; 20%].
+</p>
+<div class="row blog-image">
+    <div class="col-md-6 col-xs-12">
+        <a href="/Cards/Same Old Thing/"><img src="/static/img/cards/netrunner-same-old-thing.png" alt="Netrunner Same Old Thing" class="card-small" /></a>
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <a href="/Cards/Daily Casts/"><img src="/static/img/cards/netrunner-daily-casts.png" alt="Netrunner Daily Casts" class="card-small" /></a>
+    </div>
+</div>
+<p>
+    <a href="/Cards/Same Old Thing/" class="link-card">Same Old Thing</a> [1.55; 64%]
+    adds some event recursion (Account Siphon, Emergency Shutdown, Inside Job, Special Order) and
+    <a href="/Cards/Daily Casts/" class="link-card">Daily Casts</a> [1.09; 41%]
+    can be used for getting ever more credits.
+</p>
+<hr />
+<h4>ICE breakers</h4>
+<div class="row blog-image">
+    <div class="col-md-3 col-xs-12">
+        <a href="/Cards/Faerie/"><img src="/static/img/cards/netrunner-faerie.png" alt="Netrunner Faerie" class="card-small" /></a>
+    </div>
+    <div class="col-md-3 col-xs-12">
+        <a href="/Cards/Corroder/"><img src="/static/img/cards/netrunner-corroder.png" alt="Netrunner Corroder" class="card-small" /></a>
+    </div>
+    <div class="col-md-3 col-xs-12">
+        <a href="/Cards/Yog.0/"><img src="/static/img/cards/netrunner-yog.0.png" alt="Netrunner Yog.0" class="card-small" /></a>
+    </div>
+    <div class="col-md-3 col-xs-12">
+        <a href="/Cards/Mimic/"><img src="/static/img/cards/netrunner-mimic.png" alt="Netrunner Mimic" class="card-small" /></a>
+    </div>
+</div>
+<p>
+    Since sentries can be dangerous these days,
+    <a href="/Cards/Faerie/" class="link-card">Faerie</a> [2.07; 84%] sees quite
+    some play. Other cheap breakers come from the anarch suite:
+    <a href="/Cards/Corroder/" class="link-card">Corroder</a> [1.80, 100%],
+    <a href="/Cards/Yog.0/" class="link-card">Yog.0</a> [1.07, 86%] and
+    <a href="/Cards/Mimic/" class="link-card">Mimic</a> [0.95; 84%].
+    Please note that these breakers depend highly on <a href="/Cards/Datasucker/" class="link-card">Datasucker</a>.
+</p>
+<div class="row blog-image">
+    <div class="col-md-6 col-xs-12">
+        <a href="/Cards/Femme Fatale/"><img src="/static/img/cards/netrunner-femme-fatale.png" alt="Netrunner Femme Fatale" class="card-small" /></a>
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <a href="/Cards/Crypsis/"><img src="/static/img/cards/netrunner-crypsis.png" alt="Netrunner Crypsis" class="card-small" /></a>
+    </div>
+</div>
+<p>
+    <a href="/Cards/Femme Fatale/" class="link-card">Femme Fatale</a> [0.77; 70%]
+    is there to handle troublesome ICE (i.e. Tollbooth) and can also break sentries if needed (do not forget!).
+    <a href="/Cards/Crypsis/" class="link-card">Crypsis</a> [0.75; 61%]
+    is usually a quick access through any ice (even Chimera), but consumes a lot of credits and clicks.
+    These two programs might help you out if other breakers have been trashed or discarded due to damage.
+    Power Shutdown can be a real pain to the criminals, since they have no program recursion on their own
+    (Clone Chip, Test Run, Scavange).
+</p>
+<hr />
+<h4>Other programs</h4>
+<div class="blog-image">
+    <a href="/Cards/Datasucker/"><img src="/static/img/cards/netrunner-datasucker.png" alt="Netrunner Datasucker" class="card-small" /></a>
+</div>
+<p>
+    The only program worth mentioning here is
+    <a href="/Cards/Datasucker/" class="link-card">Datasucker</a> (2.61; 89%).
+    It's just essential if you are running Yog.0 or Mimic, and it also cuts down the cost of breaking ICE.
+    It works well with the expensive-to-strenghten breakers: Femme Fatale and Crypsis. Any other programs are marginal.
+</p>
+<hr />
+<a name="summarytable" class="anchor">&nbsp;</a>
+<table class="table table-bordered">
+    <thead>
+        <tr><th>title</th><th>set</th><th>used</th><th>average</th><th>AIU <sup>1</sup></th></tr>
+    </thead>
+    <tbody>
+    <tr><td class="warning" colspan="5">Events</td></tr>
+    <tr><td><strong>Account Siphon</strong></td><td class="italic">Core</td><td class="text-right">100%</td><td class="text-center">2.93</td><td class="centered">2.93</td></tr>
+    <tr><td><strong>Dirty Laundry</strong></td><td class="italic">Creation and Control</td><td class="text-right">100%</td><td class="text-center">2.93</td><td class="centered">2.93</td></tr>
+    <tr><td><strong>Special Order</strong></td><td class="italic">Core</td><td class="text-right">100%</td><td class="text-center">2.77</td><td class="centered">2.77</td></tr>
+    <tr><td><strong>Sure Gamble</strong></td><td class="italic">Core</td><td class="text-right">98%</td><td class="text-center">2.93</td><td class="centered">2.99</td></tr>
+    <tr><td><strong>Emergency Shutdown</strong></td><td class="italic">Cyber Exodus</td><td class="text-right">98%</td><td class="text-center">2.34</td><td class="centered">2.39</td></tr>
+    <tr><td><strong>Inside Job</strong></td><td class="italic">Core</td><td class="text-right">95%</td><td class="text-center">2.27</td><td class="centered">2.39</td></tr>
+    <tr><td><strong>Hostage</strong></td><td class="italic">Opening Moves</td><td class="text-right">57%</td><td class="text-center">1.11</td><td class="centered">1.95</td></tr>
+    <tr><td><strong>Easy Mark</strong></td><td class="italic">Core</td><td class="text-right">39%</td><td class="text-center">0.95</td><td class="centered">2.44</td></tr>
+    <tr><td>Forged Activation Orders</td><td class="italic">Core</td><td class="text-right">32%</td><td class="text-center">0.64</td><td class="centered">2.00</td></tr>
+    <tr><td>Infiltration</td><td class="italic">Core</td><td class="text-right">30%</td><td class="text-center">0.50</td><td class="centered">1.67</td></tr>
+    <tr><td>Lawyer Up&nbsp;</td><td class="italic">True Colors</td><td class="text-right">16%</td><td class="text-center">0.34</td><td class="centered">2.13</td></tr>
+    <tr><td>Blackmail</td><td class="italic">Fear and Loathing</td><td class="text-right">11%</td><td class="text-center">0.18</td><td class="centered">1.64</td></tr>
+    <tr><td>Quality Time</td><td class="italic">Humanity's Shadow</td><td class="text-right">11%</td><td class="text-center">0.20</td><td class="centered">1.82</td></tr>
+    <tr><td>Levy AR Lab Access</td><td class="italic">Creation and Control</td><td class="text-right">7%</td><td class="text-center">0.07</td><td class="centered">1.00</td></tr>
+    <tr><td>Stimhack</td><td class="italic">Core</td><td class="text-right">7%</td><td class="text-center">0.07</td><td class="centered">1.00</td></tr>
+    <tr><td>Déjà Vu</td><td class="italic">Core</td><td class="text-right">2%</td><td class="text-center">0.05</td><td class="centered">2.00</td></tr>
+    <tr><td>Satellite Uplink</td><td class="italic">Trace Amount</td><td class="text-right">2%</td><td class="text-center">0.05</td><td class="centered">2.00</td></tr>
+    <tr><td>Test Run</td><td class="italic">Cyber Exodus</td><td class="text-right">2%</td><td class="text-center">0.05</td><td class="centered">2.00</td></tr>
+    <tr><td>The Maker's Eye</td><td class="italic">Core</td><td class="text-right">2%</td><td class="text-center">0.05</td><td class="centered">2.00</td></tr>
+    <tr><td>Diesel</td><td class="italic">Core</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td class="warning" colspan="5">Hardware</td></tr>
+    <tr><td><strong>Desperado</strong></td><td class="italic">Core</td><td class="text-right">100%</td><td class="text-center">2.80</td><td class="centered">2.80</td></tr>
+    <tr><td><strong>Plascrete Carapace</strong></td><td class="italic">What Lies Ahead</td><td class="text-right">95%</td><td class="text-center">2.36</td><td class="centered">2.48</td></tr>
+    <tr><td><strong>R&amp;D Interface</strong></td><td class="italic">Future Proof</td><td class="text-right">84%</td><td class="text-center">1.84</td><td class="centered">2.19</td></tr>
+    <tr><td>HQ Interface</td><td class="italic">Humanity's Shadow</td><td class="text-right">9%</td><td class="text-center">0.11</td><td class="centered">1.22</td></tr>
+    <tr><td>Clone Chip</td><td class="italic">Creation and Control</td><td class="text-right">7%</td><td class="text-center">0.11</td><td class="centered">1.57</td></tr>
+    <tr><td>Dyson Mem Chip</td><td class="italic">Trace Amount</td><td class="text-right">7%</td><td class="text-center">0.09</td><td class="centered">1.29</td></tr>
+    <tr><td>e3 Feedback Implants</td><td class="italic">Trace Amount</td><td class="text-right">5%</td><td class="text-center">0.07</td><td class="centered">1.50</td></tr>
+    <tr><td>Lemuria Codecracker</td><td class="italic">Core</td><td class="text-right">2%</td><td class="text-center">0.07</td><td class="centered">3.00</td></tr>
+    <tr><td>Akamatsu Mem Chip</td><td class="italic">Core</td><td class="text-right">2%</td><td class="text-center">0.05</td><td class="centered">2.00</td></tr>
+    <tr><td>Silencer <span class="superscript">2</span></td><td class="italic">Double Time</td><td class="text-right">2%</td><td class="text-center">0.05</td><td class="centered">2.00</td></tr>
+    <tr><td>Doppelgänger</td><td class="italic">A Study in Static</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td class="warning" colspan="5">Resources</td></tr>
+    <tr><td><strong>Kati Jones</strong></td><td class="italic">Humanity's Shadow</td><td class="text-right">89%</td><td class="text-center">1.66</td><td class="centered">1.87</td></tr>
+    <tr><td><strong>Same Old Thing</strong></td><td class="italic">Creation and Control</td><td class="text-right">64%</td><td class="text-center">1.55</td><td class="centered">2.42</td></tr>
+    <tr><td><strong>Daily Casts</strong></td><td class="italic">Creation and Control</td><td class="text-right">41%</td><td class="text-center">1.09</td><td class="centered">2.66</td></tr>
+    <tr><td><strong>Professional Contacts</strong></td><td class="italic">Creation and Control</td><td class="text-right">34%</td><td class="text-center">0.34</td><td class="centered">1.00</td></tr>
+    <tr><td><strong>John Masanori</strong></td><td class="italic">Opening Moves</td><td class="text-right">30%</td><td class="text-center">0.34</td><td class="centered">1.13</td></tr>
+    <tr><td><strong>Mr. Li</strong></td><td class="italic">Future Proof</td><td class="text-right">20%</td><td class="text-center">0.27</td><td class="centered">1.35</td></tr>
+    <tr><td>Armitage Codebusting</td><td class="italic">Core</td><td class="text-right">11%</td><td class="text-center">0.23</td><td class="centered">2.09</td></tr>
+    <tr><td>Decoy</td><td class="italic">Core</td><td class="text-right">7%</td><td class="text-center">0.11</td><td class="centered">1.57</td></tr>
+    <tr><td>Compromised Employee</td><td class="italic">Trace Amount</td><td class="text-right">5%</td><td class="text-center">0.14</td><td class="centered">3.00</td></tr>
+    <tr><td>Bank Job</td><td class="italic">Core</td><td class="text-right">5%</td><td class="text-center">0.07</td><td class="centered">1.50</td></tr>
+    <tr><td>New Angeles City Hall</td><td class="italic">Future Proof</td><td class="text-right">2%</td><td class="text-center">0.05</td><td class="centered">2.00</td></tr>
+    <tr><td>Access to Globalsec</td><td class="italic">Core</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td>Raymond Flint</td><td class="italic">Mala Tempora</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td>Scrubber</td><td class="italic">A Study in Static</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td>The Helpful AI</td><td class="italic">What Lies Ahead</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td>The Source</td><td class="italic">Creation and Control</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td>Underworld Contact</td><td class="italic">A Study in Static</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td class="warning" colspan="5">ICE Breakers</td></tr>
+    <tr><td><strong>Corroder</strong></td><td class="italic">Core</td><td class="text-right">100%</td><td class="text-center">1.80</td><td class="centered">1.80</td></tr>
+    <tr><td><strong>Yog.0</strong></td><td class="italic">Core</td><td class="text-right">86%</td><td class="text-center">1.07</td><td class="centered">1.24</td></tr>
+    <tr><td><strong>Faerie</strong></td><td class="italic">Future Proof</td><td class="text-right">84%</td><td class="text-center">2.07</td><td class="centered">2.46</td></tr>
+    <tr><td><strong>Mimic</strong></td><td class="italic">Core</td><td class="text-right">84%</td><td class="text-center">0.95</td><td class="centered">1.13</td></tr>
+    <tr><td><strong>Femme Fatale</strong></td><td class="italic">Core</td><td class="text-right">70%</td><td class="text-center">0.77</td><td class="centered">1.10</td></tr>
+    <tr><td><strong>Crypsis</strong></td><td class="italic">Core</td><td class="text-right">61%</td><td class="text-center">0.75</td><td class="centered">1.23</td></tr>
+    <tr><td>Ninja</td><td class="italic">Core</td><td class="text-right">20%</td><td class="text-center">0.20</td><td class="centered">1.00</td></tr>
+    <tr><td>Knight</td><td class="italic">Mala Tempora</td><td class="text-right">7%</td><td class="text-center">0.14</td><td class="centered">2.00</td></tr>
+    <tr><td>Gordian Blade</td><td class="italic">Core</td><td class="text-right">7%</td><td class="text-center">0.07</td><td class="centered">1.00</td></tr>
+    <tr><td>ZU.13 Key Master</td><td class="italic">What Lies Ahead</td><td class="text-right">5%</td><td class="text-center">0.07</td><td class="centered">1.50</td></tr>
+    <tr><td>Deus X</td><td class="italic">A Study in Static</td><td class="text-right">2%</td><td class="text-center">0.05</td><td class="centered">2.00</td></tr>
+    <tr><td>Torch</td><td class="italic">Mala Tempora</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td class="warning" colspan="5">Other Programs</td></tr>
+    <tr><td><strong>Datasucker</strong></td><td class="italic">Core</td><td class="text-right">89%</td><td class="text-center">2.61</td><td class="centered">2.93</td></tr>
+    <tr><td>Sneakdoor Beta</td><td class="italic">Core</td><td class="text-right">9%</td><td class="text-center">0.16</td><td class="centered">1.78</td></tr>
+    <tr><td>Crescentus</td><td class="italic">A Study in Static</td><td class="text-right">5%</td><td class="text-center">0.07</td><td class="centered">1.50</td></tr>
+    <tr><td>Savoir-faire <span class="superscript">2</span></td><td class="italic">Double Time</td><td class="text-right">2%</td><td class="text-center">0.07</td><td class="centered">3.00</td></tr>
+    <tr><td>Magnum Opus</td><td class="italic">Core</td><td class="text-right">2%</td><td class="text-center">0.05</td><td class="centered">2.00</td></tr>
+    <tr><td>Parasite</td><td class="italic">Core</td><td class="text-right">2%</td><td class="text-center">0.05</td><td class="centered">2.00</td></tr>
+    <tr><td>Djinn</td><td class="italic">Core</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td>Keyhole</td><td class="italic">True Colors</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    <tr><td>Self-modifying Code</td><td class="italic">Creation and Control</td><td class="text-right">2%</td><td class="text-center">0.02</td><td class="centered">1.00</td></tr>
+    </tbody>
+</table>
+<p>
+    <sup>1</sup> - average if used<br />
+    <sup>2</sup> - card of Double Time, actual usage could be higher
+</p></div>
+                <div class="col-xs-12 text-right top-buffer-big">
+                    <strong>Necro</strong><br />
+                    <small><span>2014.04.27.</span> - <span>Double Time (Spin cycle)</span></small>
+                </div>
+
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /*<![CDATA[*/
+                     var disqus_config = function () {
+                     this.page.url = 'http://www.knowthemeta.com/Blog/' + 'analyzing-andromeda';
+                     this.page.identifier = 'Blog/' + 'analyzing-andromeda';
+                     };
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+
+                        s.src = '//knowthemeta.disqus.com/embed.js';
+
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                    /*]]>*/
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div>
+        <!--<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+        <!--<ins class="adsbygoogle"-->
+             <!--style="display:block"-->
+             <!--data-ad-client="ca-pub-1839926547748052"-->
+             <!--data-ad-slot="7777513729"-->
+             <!--data-ad-format="auto"></ins>-->
+        <!--<script>-->
+            <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
+        <!--</script>-->
+    </div>
+            </div>
+        </div>
+        <div>
+        <hr />
+        <footer>
+            <div class="pull-right">
+        <div class="pull-right">
+            <a href="https://www.facebook.com/netrunnerknowthemeta/"><img src="/static/img/social-fb.png" /></a>
+            <a href="https://twitter.com/knowthemeta"><img src="/static/img/social-twitter.png" /></a>
+            <a href="http://forum.stimhack.com/t/know-the-meta/6306"><img src="/static/img/social-stimhack.png" /></a>
+        </div>
+    </div>
+            <p>&copy; Necro 2017</p>
+            <p><small>The information presented on this site about Android:Netrunner, both literal and graphical,
+                is copyrighted by Fantasy Flight Games and/or Wizards of the Coast.<br />
+                This website is not produced, endorsed, supported, or affiliated with Fantasy Flight Games and/or
+                Wizards of the Coast.</small></p>
+        </footer>
+    </div>
+    </div>
+    <body>
+        <script type="text/javascript" src="/static/js/ktm3.concat.min.js"></script>
+</body>
+    <script id="dsq-count-scr" src="//knowthemeta.disqus.com/count.js" async="async"></script>
+    <body>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-1954357-9', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Tag Manager -->
+</body>
+</body>
+</html>

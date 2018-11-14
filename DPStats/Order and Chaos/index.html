@@ -1,0 +1,664 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Order and Chaos - Know the Meta - Android: Netrunner</title>
+    <meta name="description" content="Know the Meta - providing statistical information on the metagame of Android: Netrunner cardgame." />
+    <meta name="keywords" content="Netrunner, Android, meta, cardgame, decks, cards, identities, factions, winning, top" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" color="#5bbad5" href="/safari-pinned-tab.svg" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/static/css/ktm3.concat.min.css" />
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-bottom"};
+    </script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+</head>
+<body>
+    <body>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/#top"><img src="/static/img/knowthemeta20x20.png" /></a>
+                <a class="navbar-brand" href="/#top">Know the Meta - Netrunner</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/#top">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tournament Drilldown<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Magnum Opus/">Magnum Opus</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/R&amp;R MWL 2.2/">R&amp;R MWL 2.2</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Reign and Reverie/">Reign and Reverie</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Kampala Ascendent/">Kampala Ascendent</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Whispers in Nalubaale/">Whispers in Nalubaale</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Devil and the Dragon/">The Devil and the Dragon</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Council of the Crest/">Council of the Crest</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Down the White Nile/">Down the White Nile</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Sovereign Sight/">Sovereign Sight</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Revised Core Set/">Revised Core Set</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Crimson Dust/">Crimson Dust</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Free Mars/">Free Mars</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Blood and Water/">Blood and Water</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Earth&#39;s Scion/">Earth&#39;s Scion</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Terminal Directive/">Terminal Directive</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Station One/">Station One</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Daedalus Complex/">Daedalus Complex</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Quorum/">Quorum</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Martial Law/">Martial Law</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Intervention/">Intervention</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Escalation/">Escalation</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Blood Money/">Blood Money</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/23 Seconds/">23 Seconds</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Fear the Masses/">Fear the Masses</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Liberated Mind/">The Liberated Mind</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Salsette Island/">Salsette Island</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Democracy and Dogma/">Democracy and Dogma</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Business First/">Business First</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Kala Ghoda/">Kala Ghoda</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/D&amp;D, post-MWL/">D&amp;D, post-MWL</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Data and Destiny/">Data and Destiny</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Universe of Tomorrow/">The Universe of Tomorrow</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Old Hollywood/">Old Hollywood</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Underway/">The Underway</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Chrome City/">Chrome City</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Breaker Bay/">Breaker Bay</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Valley/">The Valley</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Order and Chaos/">Order and Chaos</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Source/">The Source</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/All That Remains/">All That Remains</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Up and Over/">Up and Over</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="/Cards">Cards</a></li>
+                    <li><a href="/Buyers-Guide">Buyer's Guide</a></li>
+                    <li><a href="/Blog">Blog</a></li>
+                    <li><a href="/Info">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+    <div class="container">
+        <h3>
+            <div class="pull-right">
+                <a class="btn btn-xs btn-primary" href="/DPStats/The Source">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    <span>The Source</span>
+                </a>
+                <a class="btn btn-xs btn-primary" href="/DPStats/The Valley">
+                    <span>The Valley</span>
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                
+            </div>
+            <span>Order and Chaos</span>
+        </h3>
+        <ul class="nav nav-tabs" id="tabs">
+            <li class="active"><a data-toggle="tab" href="#spotlight">Spotlight</a></li>
+            <li><a data-toggle="tab" href="#win">Win-rates</a></li>
+            <li><a data-toggle="tab" href="#top">Factions / identities, top</a></li>
+            <li><a data-toggle="tab" href="#all">Factions / identities, all</a></li>
+            <li><a data-toggle="tab" href="#compare">Compare top - all</a></li>
+            <li><a data-toggle="tab" href="#decks">Deck Drilldown</a></li>
+            <li><a data-toggle="tab" href="#ice">ICE / breakers</a></li>
+            <li><a data-toggle="tab" href="#cards">Most used cards</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <!-- Spotlight -->
+            <div id="spotlight" class="tab-pane fade in active">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <h4>Most popular IDs</h4>
+                        <div class="row">
+                            <div id="spot_popular_runner" class="col-xs-6 spotlight-card spinner"></div>
+                            <div id="spot_popular_corp" class="col-xs-6 spotlight-card spinner"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 col-xs-12">
+                        <h4>
+                            Most impressive IDs
+                            <a class="my-popover" data-placement="right" data-toggle="popover" data-content="IDs with biggest top/all ratio (and at least 5% usage)" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                        </h4>
+                        <div class="row">
+                            <div id="spot_impressive_runner" class="col-xs-6 spotlight-card spinner"></div>
+                            <div id="spot_impressive_corp" class="col-xs-6 spotlight-card spinner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row top-buffer" id="spot-deck-row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>
+                            Most used runner cards of pack
+                            <a class="my-popover" data-placement="right" data-toggle="popover" data-content="with at least 5% overall usage in last three cardpools" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                        </h4>
+                        <div id="spot_used_runner">
+                            <div class="alert alert-danger text-center top-buffer-big hidden" role="alert" id="low-deck-runner">
+                                Not enough deck data
+                            </div>
+                            <div class="alert alert-warning text-center top-buffer-big hidden" role="alert" id="no-deck-runner">
+                                No notable cards
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 spotlight-card" id="spot_used_runner_1"></div>
+                                <div class="col-xs-4 spotlight-card spinner" id="spot_used_runner_2"></div>
+                                <div class="col-xs-4 spotlight-card" id="spot_used_runner_3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>
+                            Most used corp cards of pack
+                            <a class="my-popover" data-placement="right" data-toggle="popover" data-content="with at least 5% overall usage in last three cardpools" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                        </h4>
+                        <div id="spot_used_corp">
+                            <div class="alert alert-danger text-center top-buffer-big hidden" role="alert" id="low-deck-corp">
+                                Not enough deck data
+                            </div>
+                            <div class="alert alert-warning text-center top-buffer-big hidden" role="alert" id="no-deck-corp">
+                                No notable cards
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 spotlight-card" id="spot_used_corp_1"></div>
+                                <div class="col-xs-4 spotlight-card spinner" id="spot_used_corp_2"></div>
+                                <div class="col-xs-4 spotlight-card" id="spot_used_corp_3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--win rates -->
+            <div id="win" class="tab-pane fade in">
+                <div class="alert alert-danger text-center top-buffer-big hidden" role="alert" id="low-matches">
+                    Not enough match data
+                </div>
+                <div class="row" id="win-overall-row">
+                    <div class="col-md-6 col-md-offset-3 col-xs-12">
+                        <h4 class="text-center" style="padding-bottom: 0.5em">
+                            Side win rates
+                            <a class="my-popover" data-placement="right" data-toggle="popover" data-content="Data is coming from tournament results uploaded                              to AlwaysBeRunning.net by NRTM." title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                        </h4>
+                        <div id="win-side" class="spinner"></div>
+                    </div>
+                </div>
+                <div class="row top-buffer" id="win-id-row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>
+                            Runner win rates
+                            <a class="my-popover" data-placement="right" data-toggle="popover" data-content="with at least 50 recorded matches" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                        </h4>
+                        <div id="win-runner" class="spinner"></div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>
+                            Corp win rates
+                            <a class="my-popover" data-placement="right" data-toggle="popover" data-content="with at least 50 recorded matches" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                        </h4>
+                        <div id="win-corp" class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top tab -->
+            <div id="top" class="tab-pane fade in">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>Top 30% runner factions</h4>
+                        <div id="chart_div1" class="chart-responsive spinner"></div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>Top 30% corp factions</h4>
+                        <div id="chart_div2" class="chart-responsive spinner"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>Top 30% runner identities</h4>
+                        <div id="chart_div3" class="chart-responsive spinner"></div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>Top 30% corp identities</h4>
+                        <div id="chart_div4" class="chart-responsive spinner"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- all tab -->
+            <div id="all" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>All runner factions</h4>
+                        <div id="chart_div5" class="chart-responsive spinner"></div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>All corp factions</h4>
+                        <div id="chart_div6" class="chart-responsive spinner"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>All runner identities</h4>
+                        <div id="chart_div7" class="chart-responsive spinner"></div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>All corp identities</h4>
+                        <div id="chart_div8" class="chart-responsive spinner"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- compare tab -->
+            <div id="compare" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>Compare runner factions</h4>
+                        <div id="chart_div9" class="chart-responsive spinner"></div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>Compare corp factions</h4>
+                        <div id="chart_div10" class="chart-responsive spinner"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>Compare runner identities</h4>
+                        <div id="chart_div11" class="chart-responsive spinner"></div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>Compare corp identities</h4>
+                        <div id="chart_div12" class="chart-responsive spinner"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- decks tab -->
+            <div id="decks" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>
+                            Runner decks
+                            <a class="my-popover" data-placement="right" data-toggle="popover" data-content="Click on identity name for more information on decks playing that identity." title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                        </h4>
+                        <div id="text_div1" class="list-group spinner"></div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>
+                            Corp decks
+                            <a class="my-popover" data-placement="right" data-toggle="popover" data-content="Click on identity name for more information on decks playing that identity." title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                        </h4>
+                        <div id="text_div2" class="list-group spinner"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ICE / breakers -->
+            <div id="ice" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>
+                            ICE breakers (min 5% in decks)
+                        </h4>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>card title</th>
+                                    <th>pack</th>
+                                    <th class="text-center stat-col">
+                                        in decks&nbsp;<a class="my-popover" data-placement="bottom" data-toggle="popover" data-content="percentage of all decks are using the card" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                                    </th>
+                                    <th class="text-center stat-col">
+                                        average used&nbsp;<a class="my-popover" data-placement="bottom" data-toggle="popover" data-content="average number of the card being used, counting on all decks" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                                    </th>
+                                    <th class="text-center stat-col">
+                                        average used if in deck&nbsp;<a class="my-popover" data-placement="bottom" data-toggle="popover" data-content="average number of the cards being used,                                     counting only decks having at least one of the card in question" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="breakertable" class="spinner"></tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>
+                        ICE (min 5% in decks)
+                        </h4>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>card title</th>
+                                    <th>pack</th>
+                                    <th class="text-center stat-col">
+                                        in decks&nbsp;<a class="my-popover" data-placement="bottom" data-toggle="popover" data-content="percentage of all decks are using the card" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                                    </th>
+                                    <th class="text-center stat-col">
+                                        average used&nbsp;<a class="my-popover" data-placement="bottom" data-toggle="popover" data-content="average number of the card being used, counting on all decks" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                                    </th>
+                                    <th class="text-center stat-col">
+                                        average used if in deck&nbsp;<a class="my-popover" data-placement="bottom" data-toggle="popover" data-content="average number of the cards being used,                                     counting only decks having at least one of the card in question" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="icetable" class="spinner"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- most used cards tab -->
+            <div id="cards" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h4>
+                            30 most used runner cards in decks with this cardpool
+                            <a class="my-popover" data-placement="bottom" data-toggle="popover" data-content="Most used cards from from tournaments with this cardpool.                             All tournament legal cards qualify, also from previous expansions." title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                        </h4>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>card title</th>
+                                <th>pack</th>
+                                <th class="text-center" colspan="2">used in top decks</th>
+                            </tr>
+                            </thead>
+                            <tbody id="runnertable2" class="spinner"></tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>
+                            30 most used corp cards in decks with this cardpool
+                            <a class="my-popover" data-placement="bottom" data-toggle="popover" data-content="Most used cards from from tournaments with this cardpool.                             All tournament legal cards qualify, also from previous expansions." title=""><sup><i class="fa fa-info-circle"></i></sup></a>
+                        </h4>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>card title</th>
+                                <th>pack</th>
+                                <th class="text-center" colspan="2">used in top decks</th>
+                            </tr>
+                            </thead>
+                            <tbody id="corptable2" class="spinner"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div>
+        <!--<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+        <!--<ins class="adsbygoogle"-->
+             <!--style="display:inline-block;width:320px;height:100px"-->
+             <!--data-ad-client="ca-pub-1839926547748052"-->
+             <!--data-ad-slot="1633895320"></ins>-->
+        <!--<script>-->
+            <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
+        <!--</script>-->
+    </div>
+            </div>
+        </div>
+        <div>
+        <hr />
+        <footer>
+            <div class="pull-right">
+        <div class="pull-right">
+            <a href="https://www.facebook.com/netrunnerknowthemeta/"><img src="/static/img/social-fb.png" /></a>
+            <a href="https://twitter.com/knowthemeta"><img src="/static/img/social-twitter.png" /></a>
+            <a href="http://forum.stimhack.com/t/know-the-meta/6306"><img src="/static/img/social-stimhack.png" /></a>
+        </div>
+    </div>
+            <p>&copy; Necro 2017</p>
+            <p><small>The information presented on this site about Android:Netrunner, both literal and graphical,
+                is copyrighted by Fantasy Flight Games and/or Wizards of the Coast.<br />
+                This website is not produced, endorsed, supported, or affiliated with Fantasy Flight Games and/or
+                Wizards of the Coast.</small></p>
+        </footer>
+    </div>
+    </div>
+    <body>
+        <script type="text/javascript" src="/static/js/ktm3.concat.min.js"></script>
+</body>
+    <body>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-1954357-9', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Tag Manager -->
+</body>
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload= {'modules':[{'name':'visualization','version':'1.1','packages': ['corechart']}]}"></script>
+    <script>
+        /*<![CDATA[*/
+
+        // Javascript to enable link to tab
+        var url = document.location.toString();
+        if (url.match('#')) {
+            $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show');
+        }
+
+        // Change hash for page-reload
+        $('.nav-tabs a').on('shown.bs.tab', function (e) {
+            window.location.hash = e.target.hash;
+            window.scrollTo(0,0);
+            // google analytics event
+            var tabName = $("ul#tabs li.active a").attr('href').split('#')[1];
+            ga('send', 'event', 'tabs', tabName);
+        });
+
+        // init chart data variables
+        var runnerTopFactionData = [['faction', 'standings']], runnerTopFactionColors = [],
+            runnerAllFactionData = [['faction', 'standings']], runnerAllFactionColors = [],
+            runnerTopIdentityData = [['identity', 'standings']], runnerTopIdentityColors = [],
+            runnerAllIdentityData = [['identity', 'standings']], runnerAllIdentityColors = [],
+            runnerCompareFactionData = [['faction', 'all', 'top 30%']],
+            runnerCompareIdentityData = [['faction', 'all', 'top 30%']],
+            corpTopFactionData = [['faction', 'standings']], corpTopFactionColors = [],
+            corpAllFactionData = [['faction', 'standings']], corpAllFactionColors = [],
+            corpTopIdentityData = [['identity', 'standings']], corpTopIdentityColors = [],
+            corpAllIdentityData = [['identity', 'standings']], corpAllIdentityColors = [],
+            corpCompareFactionData = [['faction', 'all', 'top 30%']],
+            corpCompareIdentityData = [['faction', 'all', 'top 30%']],
+            runnerWinrateData = [['identity', 'win rate', { role: 'style' }, 'timed win rate', { role: 'style' }, { role: 'interval' }, { role: 'interval' }]],
+            runnerWinrateColors = [],
+            corpWinrateData = [['identity', 'win rate', { role: 'style' }, 'timed win rate', { role: 'style' }, { role: 'interval' }, { role: 'interval' }]],
+            corpWinrateColors = [],
+            winrateData = [['outcome', 'fraction'],
+                ['corporation win', 0], ['corporation timed win', 0], ['draw', 0], ['runner timed win', 0], ['runner win', 0]],
+            matchCount = 0;
+            dpname = encodeURIComponent('Order and Chaos');
+
+        // hide deck card data in spotlight
+        if ('Order and Chaos' === "Last 3 aggregated" || 'Order and Chaos' === "D&D, post-MWL") {
+            $('#spot-deck-row').addClass('hidden');
+        }
+
+        // redraw charts on window resize
+        $(window).resize(function(){
+            drawTournamentCharts();
+        });
+
+        // init google chart
+        google.load('visualization', '1.0', {'packages':['corechart']});
+        google.setOnLoadCallback(populateTournamentCharts(dpname));
+
+        function showSpotLight(data, allStandings, topStandings, allDecks, side) {
+            // most popular IDs
+            data.sort(tournamentShorters.byAllStanding);
+            addCardStat('#spot_popular_'+side, data[0], allStandings, topStandings);
+
+            // most impressive IDs
+            data.sort(tournamentShorters.byTopAllFractionStanding);
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (data[i].allStandingCount / allStandings > 0.05) { // at least 4% all presence
+                    addCardStat('#spot_impressive_'+side, data[i], allStandings, topStandings);
+                    break;
+                }
+            }
+
+            // most used cards
+            if ('Order and Chaos' !== "Last 3 aggregated" && 'Order and Chaos' !== "D&D, post-MWL" && allDecks > 15) {
+                $.ajax({
+                    url: "/JSON/Cards/" + side + "/" + dpname,
+                    dataType: "json",
+                    async: true,
+                    success: function (cardData) {
+                        for (var i = 0; i < 3; i++) {
+                            if (cardData[i].deckfraction > 0.05) {
+                                $('#spot_used_'+side+'_'+(i+1)).append($('<a>', {
+                                    href: '/Cards/' + cardData[i].cardtitle + '/'
+                                }).append($('<img>', {
+                                    src: imageURL(cardData[i].cardtitle)
+                                }), $('<div>', {
+                                    class: 'spotlight-title',
+                                    text: cardData[i].cardtitle
+                                })), $('<div>', {
+                                    text: 'all: ' + percentageToString(cardData[i].deckfraction) +
+                                    ' - top: ' + percentageToString(cardData[i].topdeckfraction)
+                                }));
+                            } else {
+                                if (i == 0) {
+                                    $('#no-deck-'+side).removeClass('hidden');
+                                }
+                                break;
+                            }
+                        }
+                        $('#spot_used_'+side+'_2').removeClass('spinner');
+                    }
+                });
+            } else {
+                $('#spot_used_'+side+'_2').removeClass('spinner');
+                $('#low-deck-'+side).removeClass('hidden');
+            }
+
+        }
+
+        /*]]>*/
+    </script>
+</body>
+</html>

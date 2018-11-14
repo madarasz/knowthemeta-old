@@ -1,0 +1,628 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>New MWL and other changes - Know the Meta - Android: Netrunner</title>
+    <meta name="description" content="Know the Meta - providing statistical information on the metagame of Android: Netrunner cardgame." />
+    <meta name="keywords" content="Netrunner, Android, meta, cardgame, decks, cards, identities, factions, winning, top" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" color="#5bbad5" href="/safari-pinned-tab.svg" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/static/css/ktm3.concat.min.css" />
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-bottom"};
+    </script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+</head>
+<body>
+    <body>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/#top"><img src="/static/img/knowthemeta20x20.png" /></a>
+                <a class="navbar-brand" href="/#top">Know the Meta - Netrunner</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/#top">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tournament Drilldown<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Magnum Opus/">Magnum Opus</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/R&amp;R MWL 2.2/">R&amp;R MWL 2.2</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Reign and Reverie/">Reign and Reverie</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Kampala Ascendent/">Kampala Ascendent</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Whispers in Nalubaale/">Whispers in Nalubaale</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Devil and the Dragon/">The Devil and the Dragon</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Council of the Crest/">Council of the Crest</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Down the White Nile/">Down the White Nile</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Sovereign Sight/">Sovereign Sight</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Revised Core Set/">Revised Core Set</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Crimson Dust/">Crimson Dust</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Free Mars/">Free Mars</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Blood and Water/">Blood and Water</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Earth&#39;s Scion/">Earth&#39;s Scion</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Terminal Directive/">Terminal Directive</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Station One/">Station One</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Daedalus Complex/">Daedalus Complex</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Quorum/">Quorum</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Martial Law/">Martial Law</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Intervention/">Intervention</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Escalation/">Escalation</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Blood Money/">Blood Money</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/23 Seconds/">23 Seconds</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Fear the Masses/">Fear the Masses</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Liberated Mind/">The Liberated Mind</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Salsette Island/">Salsette Island</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Democracy and Dogma/">Democracy and Dogma</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Business First/">Business First</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Kala Ghoda/">Kala Ghoda</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/D&amp;D, post-MWL/">D&amp;D, post-MWL</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Data and Destiny/">Data and Destiny</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Universe of Tomorrow/">The Universe of Tomorrow</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Old Hollywood/">Old Hollywood</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Underway/">The Underway</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Chrome City/">Chrome City</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Breaker Bay/">Breaker Bay</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Valley/">The Valley</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Order and Chaos/">Order and Chaos</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Source/">The Source</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/All That Remains/">All That Remains</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Up and Over/">Up and Over</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="/Cards">Cards</a></li>
+                    <li><a href="/Buyers-Guide">Buyer's Guide</a></li>
+                    <li><a href="/Blog">Blog</a></li>
+                    <li><a href="/Info">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+    <div class="container">
+        <h3 class="page-header">
+            <div class="pull-right">
+        <div class="pull-right">
+            <a href="https://www.facebook.com/netrunnerknowthemeta/"><img src="/static/img/social-fb.png" /></a>
+            <a href="https://twitter.com/knowthemeta"><img src="/static/img/social-twitter.png" /></a>
+            <a href="http://forum.stimhack.com/t/know-the-meta/6306"><img src="/static/img/social-stimhack.png" /></a>
+        </div>
+    </div>
+            <span>New MWL and other changes</span><br />
+            <small><span>2016.07.13.</span> - <span>Fear the Masses</span></small>
+        </h3>
+        <div class="row">
+            <div class="col-md-8 col-xs-12">
+                <div class="row">
+                    <div class="col-md-3 teaser-col">
+                        <img src="/static/img/blog/sil-d4v1d.png" alt="New MWL and other changes" />
+                    </div>
+                    <div class="col-md-9 teaser-col">The new <strong>MWL</strong>, <strong>FAQ</strong> and <strong>Tournament Regulations</strong> have arrived recently. Is everybody excited? Is it the end of NBN and Anarch? I know you have fetishes for charts and numbers. I have a handful of those, that's why you are here. <a href="/Blog/mwl-2#tldr">TL;DR version</a></div>
+                </div>
+                <div class="col-xs-12 blog-text"><hr />
+<h4>Summary - MWL changes, card errata</h4>
+<ul>
+    <li>
+        The following cards have been added to the NAPD Most Wanted list <em>(effective from: 2016. August 1st)</em>
+        <ul>
+            <li><a href="/Cards/D4v1d/" class="link-card">D4v1d</a></li>
+            <li><a href="/Cards/Faust/" class="link-card">Faust</a></li>
+            <li><a href="/Cards/Wyldside/" class="link-card">Wyldside</a></li>
+            <li><a href="/Cards/Breaking News/" class="link-card">Breaking News</a></li>
+            <li><a href="/Cards/Mumba Temple/" class="link-card">Mumba Temple</a></li>
+        </ul>
+    </li>
+    <li>
+        The following cards have been errata'd <em>(effective from: 2016. July 18th)</em>
+        <ul>
+            <li><a href="/Cards/AstroScript Pilot Program/" class="link-card">Astroscript Pilot Program</a>: "Limit 1 per deck"</li>
+            <li><a href="/Cards/Museum of History/" class="link-card">Museum of History</a>: "Unique"</li>
+        </ul>
+    </li>
+</ul>
+<p>
+    You can check out the
+    <a href="https://www.fantasyflightgames.com/en/news/2016/7/12/2016-july-rules-update/" target="_blank">official
+        announcement</a>.
+</p>
+<hr />
+<h4>Runners cards of MWL</h4>
+<div class="blog-image">
+    <img src="/static/img/blog/MWL2-runner.png" alt="Netrunner NAPD Most Wanted runner" class="blog-big-picture" />
+</div>
+<p>
+    As you can see, Anarchs have been running "wyld" for some time. They have been the most successful runner
+    faction for a year.
+</p>
+<p>
+    <strong>Important:</strong>
+    <ul>
+        <li>The general interest for Anarchs has been dropping since the last two data packs.</li>
+        <li>I strongly advise you to compare numbers on all decks (dashed lines) versus the top 30% (solid lines).
+            If the "top 30%" is above the "all" that usually means something powerful.</li>
+        <li>My current deck data on <em>Fear the Masses</em> is scarce.</li>
+    </ul>
+    Keep these in mind when evaluating the charts.
+</p>
+<p>
+    My main problem with Anarchs is that they have an answer for all the ICE <strong>in faction</strong>. You add
+    a nice draw-engine, IDs with relevant powers (see <a href="/Cards/Whizzard: Master Gamer/" class="link-card">Whizzard: Master Gamer</a> and
+    <a href="/Cards/Noise: Hacker Extraordinaire/" class="link-card">Noise: Hacker Extraordinaire</a>) and you have pretty much everything a corporation need to fear.
+    Cool flatline protection (<a href="/Cards/I&#39;ve Had Worse/" class="link-card">I&#39;ve Had Worse</a>) is also helpful.
+    You can figure out that Anarchs ruled cyberspace. Yeah, they totally needed a nerf.
+</p>
+<h5><a href="/Cards/D4v1d/" class="link-card">D4v1d</a></h5>
+<div class="row blog-image">
+    <div class="col-xs-6 col-md-3">
+        <a href="/Cards/D4v1d/"><img src="/static/img/cards/netrunner-d4v1d.png" alt="Netrunner D4v1d" class="card-small" /></a>
+    </div>
+    <div class="col-xs-6 col-md-9 blog-image">
+        <a href="/Cards/D4v1d/">
+            <img src="/static/img/blog/MWL2-d4v1d.png" alt="Netrunner MWL D4v1d" class="blog-big-picture" />
+        </a>
+    </div>
+</div>
+<p>
+    This is why big ICE is not good enough. It makes Weyland players cry. It is the nightmare of glacier corporations.
+    It laughs at your <a href="/Cards/Assassin/" class="link-card">Assassin</a>, <a href="/Cards/Archangel/" class="link-card">Archangel</a> and solves
+    <a href="/Cards/Wraparound/" class="link-card">Wraparound</a> without bothering to play a <a href="/Cards/Corroder/" class="link-card">Corroder</a>. Come on, half of the decks
+    were not playing any fracters (barrier breakers) because of this and <a href="/Cards/Faust/" class="link-card">Faust</a>. Even some cheeky
+    Sharpers included it because it is great with recursion.
+</p>
+<p>
+    Personally, I considered <a href="/Cards/D4v1d/" class="link-card">D4v1d</a> as the root of the problem, not <a href="/Cards/Faust/" class="link-card">Faust</a>. It's
+    the ultimate protection against nasty, big ICE and makes you fearless. You should be sweating when the corp rezzes
+    a huge sentry. Anarchs should have a high-risk-high-reward play style, not a low-risk-high-reward one. I craved with
+    all my heart that it would be on the new MWL list. I am happier person now. If you are an Anarch player, you should still
+    include one or two copies. This card is a powerhouse.
+</p>
+<h5><a href="/Cards/Faust/" class="link-card">Faust</a></h5>
+<div class="row blog-image">
+    <div class="col-xs-6 col-md-3">
+        <a href="/Cards/Faust/"><img src="/static/img/cards/netrunner-faust.png" alt="Netrunner Faust" class="card-small" /></a>
+    </div>
+    <div class="col-xs-6 col-md-9 blog-image">
+        <a href="/Cards/Faust/">
+            <img src="/static/img/blog/MWL2-faust.png" alt="Netrunner MWL Faust" class="blog-big-picture" />
+        </a>
+    </div>
+</div>
+<p>
+    People were outraged. If you played corp, you had felt powerless because of this card. If you look at all the other
+    AI breakers (<a href="/Cards/Atman/" class="link-card">Atman</a>, <a href="/Cards/Crypsis/" class="link-card">Crypsis</a>, <a href="/Cards/Knight/" class="link-card">Knight</a>,
+    <a href="/Cards/Eater/" class="link-card">Eater</a>, etc.) you will see that they all come with a huge downside. The problem with
+    <a href="/Cards/Faust/" class="link-card">Faust</a> was that it had no downside. Yes, it needed cards as fuel, but
+    <a href="/Cards/Wyldside/" class="link-card">Wyldside</a>+<a href="/Cards/Adjusted Chronotype/" class="link-card">Adjusted Chronotype</a> solves that like a charm. An early
+    <a href="/Cards/Swordsman/" class="link-card">Swordsman</a> is a good silver bullet, but it is easily countered by <a href="/Cards/Mimic/" class="link-card">Mimic</a>.
+</p>
+<p>
+    You just cannot break every ICE with it. But for big ICE, there's <a href="/Cards/D4v1d/" class="link-card">D4v1d</a>. For low-strength,
+    multi-sub ICE (i.e <a href="/Cards/Komainu/" class="link-card">Komainu</a>), there's <a href="/Cards/Parasite/" class="link-card">Parasite</a>. It was hard to play corporation
+    in that environment. The meta needs this change.
+</p>
+<h5><a href="/Cards/Wyldside/" class="link-card">Wyldside</a></h5>
+<div class="row blog-image">
+    <div class="col-xs-6 col-md-3">
+        <a href="/Cards/Wyldside/"><img src="/static/img/cards/netrunner-wyldside.png" alt="Netrunner Wyldside" class="card-small" /></a>
+    </div>
+    <div class="col-xs-6 col-md-9 blog-image">
+        <a href="/Cards/Wyldside/">
+            <img src="/static/img/blog/MWL2-wyldside.png" alt="Netrunner MWL Faust" class="blog-big-picture" />
+        </a>
+    </div>
+</div>
+<p>
+    This is just another step needed to tune <a href="/Cards/Faust/" class="link-card">Faust</a> down. Since the common template was 3x
+    <a href="/Cards/Wyldside/" class="link-card">Wyldside</a> + 2x <a href="/Cards/Adjusted Chronotype/" class="link-card">Adjusted Chronotype</a>, this is a major 3 influence blow to the
+    builds in question. I'm a bit surprised that it's not <a href="/Cards/Adjusted Chronotype/" class="link-card">Adjusted Chronotype</a> that is on the MWL.
+    Maybe they want to keep the design space open for more click burning cards in the future.
+</p>
+<h5>The future of Anarch</h5>
+<p>
+    As we have seen with the previous MWL, it does not make cards disappear from the meta. It only kills previous
+    archetypes (i.e. Prepaid Kate) and makes room for other archetypes from the same faction. This is not the last time
+    we see <a href="/Cards/Faust/" class="link-card">Faust</a> or <a href="/Cards/D4v1d/" class="link-card">D4v1d</a>. Maybe they will return as one-offs in some weird
+    Shaper or Criminal build. <a href="/Cards/D4v1d/" class="link-card">D4v1d</a> is still a valuable card in any Anarch deck. But the
+    <a href="/Cards/Faust/" class="link-card">Faust</a>+<a href="/Cards/Wyldside/" class="link-card">Wyldside</a>+<a href="/Cards/D4v1d/" class="link-card">D4v1d</a>
+    era in Anarch should be over. I'm pretty sure Anarch players will return to their beloved fixed-strength breakers +
+    <a href="/Cards/Datasucker/" class="link-card">Datasucker</a>. Maybe it's time for <a href="/Cards/Valencia Estevez: The Angel of Cayambe/" class="link-card">Valencia Estevez: The Angel of Cayambe</a> to
+    shine. If not, <a href="/Cards/Whizzard: Master Gamer/" class="link-card">Whizzard: Master Gamer</a> and
+    <a href="/Cards/Noise: Hacker Extraordinaire/" class="link-card">Noise: Hacker Extraordinaire</a> will always be a good option.
+</p>
+<hr />
+<h4>Corporation cards of MWL</h4>
+<div class="blog-image">
+    <img src="/static/img/blog/MWL2-corp.png" alt="Netrunner NAPD Most Wanted corp" class="blog-big-picture" />
+</div>
+<p>
+    NBN is just nuts.
+</p>
+<h5><a href="/Cards/Breaking News/" class="link-card">Breaking News</a></h5>
+<div class="row blog-image">
+    <div class="col-xs-6 col-md-3">
+        <a href="/Cards/Breaking News/"><img src="/static/img/cards/netrunner-breaking-news.png" alt="Netrunner Breaking News" class="card-small" /></a>
+    </div>
+    <div class="col-xs-6 col-md-9 blog-image">
+        <a href="/Cards/Breaking News/">
+            <img src="/static/img/blog/MWL2-breaking-news.png" alt="Netrunner MWL Breaking News" class="blog-big-picture" />
+        </a>
+    </div>
+</div>
+<p>
+    <a href="/MDSFaction/The%20Liberated%20Mind/nbn">Last time I checked</a>, 81.3% of NBN decks contained this card.
+    It's an agenda for fast advancing and enabler for tag-and-bag or <a href="/Cards/Exchange of Information/" class="link-card">Exchange of Information</a> decks.
+    I guess the problem was not with the fast advance part. The old-school NBN FA deck only contains 1
+    <a href="/Cards/Breaking News/" class="link-card">Breaking News</a> and 1 <a href="/Cards/15 Minutes/" class="link-card">15 Minutes</a>. There are some serious tag punishment cards
+    (i.e. Boom!, Observe and Destroy) lurking around the corner. There's no need for all hell breaking lose in the future.
+</p>
+<h5><a href="/Cards/Mumba Temple/" class="link-card">Mumba Temple</a></h5>
+<div class="row blog-image">
+    <div class="col-xs-6 col-md-3">
+        <a href="/Cards/Mumba Temple/"><img src="/static/img/cards/netrunner-mumba-temple.png" alt="Netrunner Mumba Temple" class="card-small" /></a>
+    </div>
+    <div class="col-xs-6 col-md-9 blog-image">
+        <a href="/Cards/Mumba Temple/">
+            <img src="/static/img/blog/MWL2-mumba-temple.png" alt="Netrunner MWL Mumba Temple" class="blog-big-picture" />
+        </a>
+    </div>
+</div>
+<p>
+    I like to think about it as a harder-to-trash, humbler <a href="/Cards/Sundew/" class="link-card">Sundew</a>. Though it is not a constant flow
+    of credits, you can maximize its benefits by rezzing assets at the end of the runner's turn. Did the runner think
+    you hadn't had the credits to rez that nasty piece of ICE? Well, surprise. Also it is great against
+    <a href="/Cards/Account Siphon/" class="link-card">Account Siphon</a>.
+</p>
+<p>
+    Now you can say goodbye to your <a href="http://stimhack.com/regional-guf-brisbane-qld-australia-33-players/">Temple-FA NBN</a>
+    decks. <a href="/Cards/Mumba Temple/" class="link-card">Mumba Temple</a> is a vital part of many horizontal
+    <a href="/Cards/Industrial Genomics: Growing Solutions/" class="link-card">Industrial Genomics: Growing Solutions</a> and <a href="/Cards/Gagarin Deep Space: Expanding the Horizon/" class="link-card">Gagarin Deep Space: Expanding the Horizon</a>
+    builds. The kind of decks which players always bitch about. Being strong and annoying is usually enough to get you
+    on the MWL list.
+</p>
+<h5><a href="/Cards/Museum of History/" class="link-card">Museum of History</a>: unique</h5>
+<div class="row blog-image">
+    <div class="col-xs-6 col-md-3">
+        <a href="/Cards/Museum of History/"><img src="/static/img/cards/netrunner-museum-of-history.png" alt="Netrunner Museum of History" class="card-small" /></a>
+    </div>
+    <div class="col-xs-6 col-md-9 blog-image">
+        <a href="/Cards/Museum of History/">
+            <img src="/static/img/blog/MWL2-museum-of-history.png" alt="Netrunner MWL Museum of History" class="blog-big-picture" />
+        </a>
+    </div>
+</div>
+<p>
+    Again, it's in <a href="/Cards/Industrial Genomics: Growing Solutions/" class="link-card">Industrial Genomics: Growing Solutions</a> and
+    <a href="/Cards/Gagarin Deep Space: Expanding the Horizon/" class="link-card">Gagarin Deep Space: Expanding the Horizon</a> decks that scares and infuriates people. I like the
+    whole concept of corporation recursion, but it usually boils down to constant shuffling and timed-out matches. I
+    believe these decks can be handled and beaten by a good runner. Unfortunately these are the decks that might nudge
+    players in the direction of abandoning Netrunner.
+</p>
+<p>
+    Since <a href="/Cards/Museum of History/" class="link-card">Museum of History</a> is not old enough (6 months) to be on the MWL, some other measures
+    were implemented. The same thing worked for <a href="/Cards/Wireless Net Pavilion/" class="link-card">Wireless Net Pavilion</a> previously. Will this and
+    the <a href="/Cards/Mumba Temple/" class="link-card">Mumba Temple</a> nerf enough to remove the IG prison decks from the meta? <strong>No</strong>,
+    but they will be a bit easier to play against.
+</p>
+<h5><a href="/Cards/AstroScript Pilot Program/" class="link-card">AstroScript Pilot Program</a>: limit 1 per deck</h5>
+<div class="row blog-image">
+    <div class="col-xs-6 col-md-3">
+        <a href="/Cards/AstroScript Pilot Program/"><img src="/static/img/cards/netrunner-astroscript-pilot-program.png" alt="Netrunner AstroScript Pilot Program" class="card-small" /></a>
+    </div>
+    <div class="col-xs-6 col-md-9 blog-image">
+        <a href="/Cards/AstroScript Pilot Program/">
+            <img src="/static/img/blog/MWL2-astroscript-pilot-program.png" alt="Netrunner MWL AstroScript Pilot Program" class="blog-big-picture" />
+        </a>
+    </div>
+</div>
+<p>
+    This might be final nail in the coffin of NBN fast advance. More on that in the next paragraph. Keep in mind that there
+    are already a significant amount (~20%) of NBN decks without <a href="/Cards/AstroScript Pilot Program/" class="link-card">AstroScript Pilot Program</a>.
+</p>
+<h5>The future of NBN, in defense of NBN FA</h5>
+<p>
+    NBN is currently overpowered. The previous MWL added 6 extra influence to the common NBN FA build, but it was not enough.
+    This time the burden should be enough to dethrone NBN.
+</p>
+<p>
+    On the other hand, I want to keep NBN fast advance in the meta. <strong>It just needs to be weaker and a bit slower.</strong>
+    If you don't
+    have fast advance in the meta, runner decks will lose the need to do pressure in the early game. Janky decks are
+    fun, but FA is there as a reality check. If you have no chance of beating FA, your deck is slow and
+    your concept is probably overcomplicated. Without FA, you might end up with the runner equivalent of IG prison decks.
+</p>
+<p>
+    Playing against FA is not easy, I know. The runner must be aggressive. A well timed HQ multi-access and an R&amp;D lock
+    are essential. There's also bluffing going on with remotes which is stressful. Yes, there's luck involved, but you
+    are there to mitigate risks. Beating FA also relied on <a href="/Cards/Clot/" class="link-card">Clot</a> AND it's recursion/tutoring.
+    This is where Criminals fell short, they require precious influence for both. Will they be good again with the fall
+    of NBN FA?
+</p>
+<p>
+    With the introduction of <a href="/Cards/Jeeves Model Bioroids/" class="link-card">Jeeves Model Bioroids</a> and <a href="/Cards/Lateral Growth/" class="link-card">Lateral Growth</a>, HB
+    might become the most able faction for fast advancing. This is a sudden change in the faction flavor of NBN. Maybe
+    Damon wants to redefine NBN as "tagging and tag punishment".
+</p>
+<hr />
+<h4>Cards that I wish were on the list</h4>
+<p>
+    I am content with this list. Originally I wanted <a href="/Cards/Levy AR Lab Access/" class="link-card">Levy AR Lab Access</a> to be included. It was in
+    2/3 of the decks not so long ago. It's default in Shaper, is a must have in Anarch (to keep
+    <a href="/Cards/Wyldside/" class="link-card">Wyldside</a> going) and various Criminal builds
+    (<a href="http://stimhack.com/regional-london-77-players/">Gheist</a>,
+    <a href="https://netrunnerdb.com/en/decklist/33321/drugs-andy-1st-place-at-pandemonium-sc">Drugs Andy</a>,
+    <a href="https://netrunnerdb.com/en/decklist/35053/express-elevator-to-hell-party-edition-ffgc-regionals-1st-">Party Ken</a>)
+    were using it. If the <a href="/Cards/Faust/" class="link-card">Faust</a>+<a href="/Cards/Wyldside/" class="link-card">Wyldside</a> thing becomes irrelevant, then
+    <a href="/Cards/Levy AR Lab Access/" class="link-card">Levy AR Lab Access</a> should be fine.
+</p>
+<hr />
+<h4>Other important FAQ updates</h4>
+<p>
+    <ul>
+        <li>
+            The deck is shuffled after each card search. The weird <a href="/Cards/Mumbad City Hall/" class="link-card">Mumbad City Hall</a>+<a href="/Cards/Heritage Committee/" class="link-card">Heritage Committee</a>
+            combo does not work anymore.
+        </li>
+        <li>
+            <a href="/Cards/Punitive Counterstrike/" class="link-card">Punitive Counterstrike</a> does damage based on the <strong>printed</strong> agenda points.
+        </li>
+        <li>
+            <a href="/Cards/Targeted Marketing/" class="link-card">Targeted Marketing</a> does not trigger if it is trashed by a named runner current.
+        </li>
+        <li>
+            <a href="/Cards/Hostile Infrastructure/" class="link-card">Hostile Infrastructure</a> does 1 damage for each other simultaneously trashed card.
+        </li>
+        <li>
+            The requirement of <a href="/Cards/Always Be Running/" class="link-card">Always be Running</a> is not fulfilled by programs that make a run.
+        </li>
+        <li>
+            <a href="/Cards/Jeeves Model Bioroids/" class="link-card">Jeeves Model Bioroids</a> must be rezzed before spending the 3 clicks. Additional click
+            costs also trigger the card.
+        </li>
+    </ul>
+</p>
+<hr />
+<h4>Other tournament rule changes</h4>
+<p>
+    <ul>
+        <li>
+            <strong>Tournament scoring</strong>: Winning = 3 points, Modified win (timed win) = 2 points, Draw = 1 point
+        </li>
+        <li>
+            More time for top cut matches (40 min) and finals (60 min)
+        </li>
+        <li>
+            Third-party tokens are officially allowed if they do not obscure the play area.
+        </li>
+        <li>
+            New rules for cards lost and damaged during tournaments. You can proxy.
+        </li>
+    </ul>
+</p>
+<hr />
+<a name="tldr" class="anchor">&nbsp;</a>
+<h4>My opinion on the new MWL and card errata - TL;DR</h4>
+<ul>
+    <li>
+        <strong>Anarchs</strong>, <strong>NBN FA</strong> and <strong>IG</strong> are nerfed. Strong and annoying decks
+        will lose power. It is well deserved.
+    </li>
+    <li>
+        Cards on the MWL list will not disappear from the meta. Cards are on the MWL because they are overpowered. Will
+        players stop playing strong cards? Absolutely no. Usually they will cut corners on less powerful parts of their
+        deck.
+    </li>
+    <li>
+        The Most Wanted List will make certain archetypes extinct, leaving space for new builds.
+    </li>
+    <li>
+        Criminals will be played more due to less fast advance corporations.
+    </li>
+    <li>
+        Anarchs will likely to return to fixed-strength breakers + <a href="/Cards/Datasucker/" class="link-card">Datasucker</a>.
+        Some influence will be spared for <a href="/Cards/D4v1d/" class="link-card">D4v1d</a>, I'm sure.
+    </li>
+    <li>
+        Since asset spam decks are weakened, <a href="/Cards/Whizzard: Master Gamer/" class="link-card">Whizzard: Master Gamer</a> will see even less play.
+    </li>
+    <li>
+        NBN FA should be weakened but I hope it will stay in the meta. It is the flavor of the faction and also a
+        barrier against overly slow runner decks.
+    </li>
+    <li>
+        NBN is likely to move towards being a tag-punisher faction.
+    </li>
+</ul>
+<hr />
+<p>
+    I would love to see your comments below.
+</p></div>
+                <div class="col-xs-12 text-right top-buffer-big">
+                    <strong>Necro</strong><br />
+                    <small><span>2016.07.13.</span> - <span>Fear the Masses</span></small>
+                </div>
+
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /*<![CDATA[*/
+                     var disqus_config = function () {
+                     this.page.url = 'http://www.knowthemeta.com/Blog/' + 'mwl-2';
+                     this.page.identifier = 'Blog/' + 'mwl-2';
+                     };
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+
+                        s.src = '//knowthemeta.disqus.com/embed.js';
+
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                    /*]]>*/
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div>
+        <!--<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+        <!--<ins class="adsbygoogle"-->
+             <!--style="display:block"-->
+             <!--data-ad-client="ca-pub-1839926547748052"-->
+             <!--data-ad-slot="7777513729"-->
+             <!--data-ad-format="auto"></ins>-->
+        <!--<script>-->
+            <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
+        <!--</script>-->
+    </div>
+            </div>
+        </div>
+        <div>
+        <hr />
+        <footer>
+            <div class="pull-right">
+        <div class="pull-right">
+            <a href="https://www.facebook.com/netrunnerknowthemeta/"><img src="/static/img/social-fb.png" /></a>
+            <a href="https://twitter.com/knowthemeta"><img src="/static/img/social-twitter.png" /></a>
+            <a href="http://forum.stimhack.com/t/know-the-meta/6306"><img src="/static/img/social-stimhack.png" /></a>
+        </div>
+    </div>
+            <p>&copy; Necro 2017</p>
+            <p><small>The information presented on this site about Android:Netrunner, both literal and graphical,
+                is copyrighted by Fantasy Flight Games and/or Wizards of the Coast.<br />
+                This website is not produced, endorsed, supported, or affiliated with Fantasy Flight Games and/or
+                Wizards of the Coast.</small></p>
+        </footer>
+    </div>
+    </div>
+    <body>
+        <script type="text/javascript" src="/static/js/ktm3.concat.min.js"></script>
+</body>
+    <script id="dsq-count-scr" src="//knowthemeta.disqus.com/count.js" async="async"></script>
+    <body>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-1954357-9', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Tag Manager -->
+</body>
+</body>
+</html>

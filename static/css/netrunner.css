@@ -1,0 +1,226 @@
+@font-face {
+	font-family: 'netrunner';
+	src:url('../fonts/netrunner.eot?h5uykn');
+	src:url('../fonts/netrunner.eot?#iefixh5uykn') format('embedded-opentype'),
+		url('../fonts/netrunner.woff?h5uykn') format('woff'),
+		url('../fonts/netrunner.ttf?h5uykn') format('truetype'),
+		url('../fonts/netrunner.svg?h5uykn#netrunner') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'netrunner';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* faction icons */
+.icon-neutral:before {
+    padding: 0em 0.2em;
+    content: "\1F0A0";
+    color: grey;
+}
+
+.icon-shaper:before {
+	content: "\e613";
+    color: limegreen;
+}
+
+.icon-anarch:before {
+	content: "\e605";
+    color: orangered;
+}
+
+.icon-criminal:before {
+	content: "\e612";
+    color: royalblue;
+}
+
+.icon-haas-bioroid:before {
+	content: "\e602";
+    color: blueviolet;
+}
+
+.icon-weyland-consortium:before {
+	content: "\e607";
+    color: darkgreen;
+}
+
+.icon-jinteki:before {
+	content: "\e005";
+    color: crimson;
+}
+
+.icon-nbn:before {
+	content: "\e60b";
+    color: darkorange;
+}
+
+/* missing mini-faction icons*/
+.icon-apex:before {
+    padding: 0em 0.2em;
+    content: "\1F0A0";
+    color: darkred;
+}
+
+.icon-sunny-lebeau:before {
+    padding: 0em 0.2em;
+    content: "\1F0A0";
+    color: black;
+}
+
+.icon-adam:before {
+    padding: 0em 0.2em;
+    content: "\1F0A0";
+    color: darkgoldenrod;
+}
+
+.button-shaper {
+	background-color: #d6f5d6;
+}
+.button-shaper:hover {
+	background-color: #adebad !important;
+}
+.button-anarch {
+	background-color: #ffdacc;
+}
+.button-anarch:hover {
+	background-color: #ffb499 !important;
+}
+.button-criminal {
+	background-color: #d3dcf8;
+}
+.button-criminal:hover {
+	background-color: #a7b9f1 !important;
+}
+.button-nbn {
+	background-color: #ffe8cc;
+}
+.button-nbn:hover {
+	background-color: #ffd199 !important;
+}
+.button-jinteki {
+	background-color: #fbd0d9;
+}
+.button-jinteki:hover {
+	background-color: #f6a2b3 !important;
+}
+.button-weyland-consortium {
+	background-color: #cfc;
+}
+.button-weyland-consortium:hover {
+	background-color: #9f9 !important;
+}
+.button-haas-bioroid {
+	background-color: #e6d2f9;
+}
+.button-haas-bioroid:hover {
+	background-color: #cda5f3 !important;
+}
+
+/* on card icons */
+.icon-credit:before {
+	content: "\e600";
+}
+
+.icon-recurring-credit:before {
+	content: "\e608";
+}
+
+.icon-click:before {
+	content: "\e611";
+}
+
+.icon-link:before {
+	content: "\e601";
+}
+
+.icon-link-half-bottom:before {
+	content: "\e61b";
+}
+
+.icon-link-half-top:before {
+	content: "\e61c";
+}
+
+.icon-trash:before {
+	content: "\e606";
+}
+
+.icon-mu:before {
+	content: "\e610";
+}
+
+.icon-1mu:before {
+	content: "\e60a";
+}
+
+.icon-2mu:before {
+	content: "\e60c";
+}
+
+.icon-3mu:before {
+	content: "\e60e";
+}
+
+.icon-subroutine:before {
+	content: "\e604";
+}
+
+.icon-agenda:before {
+	content: "\e60d";
+}
+
+.icon-rez:before {
+	content: "\e60f";
+}
+
+/* cycle icons */
+
+.icon-Core-Set:before {
+	content: "\e618";
+}
+
+.icon-Genesis:before {
+	content: "\e616";
+}
+
+.icon-Spin:before {
+	content: "\e615";
+}
+
+.icon-Creation-and-Control:before {
+	content: "\e617";
+}
+
+.icon-Honor-and-Profit:before {
+	content: "\e614";
+}
+
+.icon-Lunar:before {
+	content: "\e619";
+}
+
+.icon-Order-and-Chaos:before {
+	content: "\e61a";
+}
+
+/* missing cycle icons */
+.icon-SanSan:before {
+    padding: 0em 0.3em;
+    content: "\25CF";
+}
+
+.icon-Data-and-Destiny:before {
+    padding: 0em 0.3em;
+    content: "\25CF";
+}

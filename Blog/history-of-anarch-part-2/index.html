@@ -1,0 +1,937 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>History of Anarch - part 2 + MWL thoughts - Know the Meta - Android: Netrunner</title>
+    <meta name="description" content="Know the Meta - providing statistical information on the metagame of Android: Netrunner cardgame." />
+    <meta name="keywords" content="Netrunner, Android, meta, cardgame, decks, cards, identities, factions, winning, top" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" color="#5bbad5" href="/safari-pinned-tab.svg" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/static/css/ktm3.concat.min.css" />
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-bottom"};
+    </script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+</head>
+<body>
+    <body>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/#top"><img src="/static/img/knowthemeta20x20.png" /></a>
+                <a class="navbar-brand" href="/#top">Know the Meta - Netrunner</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/#top">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tournament Drilldown<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Magnum Opus/">Magnum Opus</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/R&amp;R MWL 2.2/">R&amp;R MWL 2.2</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Reign and Reverie/">Reign and Reverie</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Kampala Ascendent/">Kampala Ascendent</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Whispers in Nalubaale/">Whispers in Nalubaale</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Devil and the Dragon/">The Devil and the Dragon</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Council of the Crest/">Council of the Crest</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Down the White Nile/">Down the White Nile</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Sovereign Sight/">Sovereign Sight</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Revised Core Set/">Revised Core Set</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Crimson Dust/">Crimson Dust</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Free Mars/">Free Mars</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Blood and Water/">Blood and Water</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Earth&#39;s Scion/">Earth&#39;s Scion</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Terminal Directive/">Terminal Directive</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Station One/">Station One</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Daedalus Complex/">Daedalus Complex</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Quorum/">Quorum</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Martial Law/">Martial Law</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Intervention/">Intervention</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Escalation/">Escalation</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Blood Money/">Blood Money</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/23 Seconds/">23 Seconds</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Fear the Masses/">Fear the Masses</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Liberated Mind/">The Liberated Mind</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Salsette Island/">Salsette Island</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Democracy and Dogma/">Democracy and Dogma</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Business First/">Business First</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Kala Ghoda/">Kala Ghoda</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/D&amp;D, post-MWL/">D&amp;D, post-MWL</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Data and Destiny/">Data and Destiny</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Universe of Tomorrow/">The Universe of Tomorrow</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Old Hollywood/">Old Hollywood</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Underway/">The Underway</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Chrome City/">Chrome City</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Breaker Bay/">Breaker Bay</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Valley/">The Valley</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Order and Chaos/">Order and Chaos</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/The Source/">The Source</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/All That Remains/">All That Remains</a>
+                            </li>
+                            <li>
+                                <a href="/DPStats/Up and Over/">Up and Over</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="/Cards">Cards</a></li>
+                    <li><a href="/Buyers-Guide">Buyer's Guide</a></li>
+                    <li><a href="/Blog">Blog</a></li>
+                    <li><a href="/Info">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+    <div class="container">
+        <h3 class="page-header">
+            <div class="pull-right">
+        <div class="pull-right">
+            <a href="https://www.facebook.com/netrunnerknowthemeta/"><img src="/static/img/social-fb.png" /></a>
+            <a href="https://twitter.com/knowthemeta"><img src="/static/img/social-twitter.png" /></a>
+            <a href="http://forum.stimhack.com/t/know-the-meta/6306"><img src="/static/img/social-stimhack.png" /></a>
+        </div>
+    </div>
+            <span>History of Anarch - part 2 + MWL thoughts</span><br />
+            <small><span>2017.04.14.</span> - <span>Station One</span></small>
+        </h3>
+        <div class="row">
+            <div class="col-md-8 col-xs-12">
+                <div class="row">
+                    <div class="col-md-3 teaser-col">
+                        <img src="/static/img/blog/sil-anarch2.png" alt="History of Anarch - part 2 + MWL thoughts" />
+                    </div>
+                    <div class="col-md-9 teaser-col">This is the second part of the Anarch history article. We left off at the biggest orange dominance there ever was. Something was bound to happen, what was it? Uncover the truth below. (<a href="/Blog/history-of-anarch-part-2#mwl">Jump to thoughts on MWL</a>)</div>
+                </div>
+                <div class="col-xs-12 blog-text"><div class="bg-info info-box">
+    You can find "part 1" of the article here:<br />
+    <a href="/Blog/history-of-anarch-part-1">History of Anarch - part 1</a>
+</div>
+<!--Charts-->
+<hr />
+<h4>The big picture</h4>
+<div class="blog-image text-center m-b-1">
+    <a href="/static/img/blog/ahistoryfull.png" data-toggle="lightbox">
+        <img src="/static/img/blog/ahistoryfull.png" alt="Netrunner history anarch full" class="blog-big-picture" />
+    </a>
+    <br />
+    <em>click to enlarge</em>
+</div>
+<hr />
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group btn-group-xs" role="group" aria-label="data timeline">
+            <button id="faction-anarch" type="button" class="btn btn-default active" onclick="clickFilter('anarch', selectedData);">Anarch</button>
+            <button id="faction-shaper" type="button" class="btn btn-default" onclick="clickFilter('shaper', selectedData);">Shaper</button>
+            <button id="faction-criminal" type="button" class="btn btn-default" onclick="clickFilter('criminal', selectedData);">Criminal</button>
+        </div>
+        <div class="btn-group btn-group-xs" role="group" aria-label="data timeline">
+            <button id="data-top" type="button" class="btn btn-default active" onclick="clickFilter(selectedFaction, 'top');">Top 30%</button>
+            <button id="data-all" type="button" class="btn btn-default" onclick="clickFilter(selectedFaction, 'all');">All</button>
+        </div>
+        <div id="chart-ids" class="spinner"></div>
+    </div>
+</div>
+<br />
+<!--Liberated Mind-->
+<h4>Sudden dropback</h4>
+<div class="blog-image">
+    <a href="/Cards/Exchange of Information/"><img src="/static/img/cards/netrunner-exchange-of-information.png" alt="Netrunner Exchange of Information" class="card-small" /></a>
+</div>
+<p>
+    <table>
+        <tr>
+            <td class="indicator">
+                <i class="fa fa-chevron-down text-danger" aria-hidden="true"></i><br />
+                <i class="fa fa-chevron-down text-danger" aria-hidden="true"></i><br />
+                <i class="fa fa-chevron-down text-danger" aria-hidden="true"></i>
+            </td>
+            <td>
+                <strong>The Liberated Mind</strong> delivered a big blow with <a href="/Cards/Exchange of Information/" class="link-card">Exchange of Information</a>.
+                <strong><em>Anarchs suffered the heaviest fallback</em></strong> as Shapers stepped in to challenge
+                <a href="https://netrunnerdb.com/en/decklist/35373/eoi-sync">EoI SYNC</a> decks. The slower, more careful play of
+                Shapers and the ability to stop <a href="/Cards/Breaking News/" class="link-card">Breaking News</a> with an instant-speed <a href="/Cards/Clot/" class="link-card">Clot</a>
+                payed off.<br />
+                <br />
+                <em>I know FFG just dropped the third MWL, but I don't have any statistics on the effect of that.</em><br />
+                <br />
+                Even during <strong>Fear the Masses</strong>, the three factions were equally popular, though Criminal
+                was lagging behind in efficiency.
+            </td>
+        </tr>
+    </table>
+</p>
+<br />
+<h4>Climbing back</h4>
+<!--23 Seconds-->
+<div class="row blog-image">
+    <div class="col-md-3 col-xs-6 col-md-offset-3">
+        <a href="/Cards/NBN: Controlling the Message/"><img src="/static/img/cards/netrunner-nbn-controlling-the-message.png" alt="Netrunner NBN: Controlling the Message" class="card-small" /></a>
+    </div>
+    <div class="col-md-3 col-xs-6 col-md-offset-3">
+        <a href="/Cards/Hard-Hitting News/"><img src="/static/img/cards/netrunner-hard-hitting-news.png" alt="Netrunner Hard-Hitting News" class="card-small" /></a>
+    </div>
+</div>
+<p>
+<table>
+    <tr>
+        <td class="indicator">
+            <i class="fa fa-chevron-up text-danger" aria-hidden="true"></i>
+        </td>
+        <td>
+            <a href="/Cards/NBN: Controlling the Message/" class="link-card">NBN: Controlling the Message</a> was the new ID in <strong>23 Seconds</strong>.
+            It quickly became the strongest corporation deck:
+            <a href="https://netrunnerdb.com/en/decklist/37097/1st-place-uk-nationals-2016-ctm-tempo-rush">
+                CTM Tempo Rush</a>. <a href="/Cards/Hard-Hitting News/" class="link-card">Hard-Hitting News</a> could be countered by cautions running and
+            a credit reserve, but the asset-heavy nature of the archetype made
+            <em>Dumblefork</em> an ideal counter for it, so Whizzard started climbing the charts once more. The Shaper gameplan was still valid,
+            but Anarch was doing its business slightly better as <a href="/Cards/Salsette Slums/" class="link-card">Salsette Slums</a> was taken out of the binder.
+        </td>
+    </tr>
+</table>
+</p>
+<br />
+<!--MWL 1.1-->
+<div class="row blog-image">
+    <div class="col-xs-4">
+        <a href="/Cards/D4v1d/"><img src="/static/img/cards/netrunner-d4v1d.png" alt="Netrunner D4v1d" class="card-small" /></a>
+    </div>
+    <div class="col-xs-4">
+        <a href="/Cards/Faust/"><img src="/static/img/cards/netrunner-faust.png" alt="Netrunner Faust" class="card-small" /></a>
+    </div>
+    <div class="col-xs-4">
+        <a href="/Cards/Wyldside/"><img src="/static/img/cards/netrunner-wyldside.png" alt="Netrunner Wyldside" class="card-small" /></a>
+    </div>
+</div>
+<p>
+<table>
+    <tr>
+        <td class="indicator">
+            <i class="fa fa-minus text-danger" aria-hidden="true"></i>
+        </td>
+        <td>
+            In the meantime <a href="/Blog/mwl-2">MWL 1.1</a> was out. Regarding the runner side it only had Anarch cards on it.
+            <strong><em>Surprisingly it did not hurt Anarch overall</em></strong>. It killed the <em>Faust Noise</em> archetype
+            because it could not bare any more strain on influence. <em>Dumblefork</em> took its place while dropping
+            <a href="/Cards/Clone Chip/" class="link-card">Clone Chip</a>s and spending the remaining points on <a href="/Cards/Employee Strike/" class="link-card">Employee Strike</a>.
+            That worked out quite well against the corp meta of the time (HB: EtF, NBN: CtM, Pālanā). <em>Valencia</em>
+            reappeared with various builds.
+        </td>
+    </tr>
+</table>
+</p>
+<br />
+<!--Blood Money-->
+<div class="row blog-image">
+    <div class="col-xs-4">
+        <a href="/Cards/Rumor Mill/"><img src="/static/img/cards/netrunner-rumor-mill.png" alt="Netrunner Rumor Mill" class="card-small" /></a>
+    </div>
+    <div class="col-xs-4">
+        <a href="/Cards/Paperclip/"><img src="/static/img/cards/netrunner-paperclip.png" alt="Netrunner Paperclip" class="card-small" /></a>
+    </div>
+    <div class="col-xs-4">
+        <a href="/Cards/Temüjin Contract/"><img src="/static/img/cards/netrunner-temjin-contract.png" alt="Netrunner Temüjin Contract" class="card-small" /></a>
+    </div>
+</div>
+<p>
+<table>
+    <tr>
+        <td class="indicator">
+            <i class="fa fa-chevron-down text-danger" aria-hidden="true"></i>
+        </td>
+        <td>
+            <strong>Blood Money</strong> was an influential pack featuring great runner material.<br />
+            <br />
+            <a href="/Cards/Rumor Mill/" class="link-card">Rumor Mill</a> was meta-defining. It single-handedly brought down <em>glacier corps</em>. It
+            disables <a href="/Cards/Caprice Nisei/" class="link-card">Caprice Nisei</a>, <a href="/Cards/Ash 2X3ZB9CY/" class="link-card">Ash 2X3ZB9CY</a> and <a href="/Cards/Marcus Batty/" class="link-card">Marcus Batty</a>.
+            Basically anything you would add to a scoring server to defend against the runner, especially late-game. It
+            also ended careless <a href="/Cards/Jackson Howard/" class="link-card">Jackson Howard</a> usage.<br />
+            <br />
+            <a href="/Cards/Paperclip/" class="link-card">Paperclip</a> became THE barrier breaker, we usually reached a bit deeper into our influence
+            pocket and forgot <a href="/Cards/Corroder/" class="link-card">Corroder</a> ever existed. Of course this was not an issue for Anarch, it
+            even synergizes with other card effects.<br />
+            <br />
+            <a href="/Cards/Temüjin Contract/" class="link-card">Temüjin Contract</a>
+            feels like an auto-include in every deck, it is extremely powerful. Especially if the corporation is
+            desperate on tagging you and/or has expensive-to-trash cards. It overshadowed the previous two cards.
+            Naturally Criminal was awoken from its slumber and became relevant again.
+            <a href="http://www.acoo.net/deck/19729/">Andy Sucker</a> returned with <a href="/Cards/The Turning Wheel/" class="link-card">The Turning Wheel</a>,
+            sometimes <a href="/Cards/Rebirth/" class="link-card">Rebirth</a> and depending on the meta: <a href="/Cards/Networking/" class="link-card">Networking</a>. Every
+            faction tried to squeeze the card in, two-thirds of the runners were playing this new wonder and these
+            numbers haven't dropped so far.
+            (Kate variant: <a href="https://netrunnerdb.com/en/decklist/37432/temujin-katman">Temujin Katman</a>)
+        </td>
+    </tr>
+</table>
+</p>
+<br />
+<!--Escalation-->
+<div class="row blog-image">
+    <div class="col-xs-6 col-md-3 col-md-offset-3">
+        <a href="/Cards/Obelus/"><img src="/static/img/cards/netrunner-obelus.png" alt="Netrunner Obelus" class="card-small" /></a>
+    </div>
+    <div class="col-xs-6 col-md-3 col-md-offset-3">
+        <a href="/Cards/Black Orchestra/"><img src="/static/img/cards/netrunner-black-orchestra.png" alt="Netrunner Black Orchestra" class="card-small" /></a>
+    </div>
+</div>
+<p>
+    <table>
+        <tr>
+            <td class="indicator">
+                <i class="fa fa-chevron-up text-danger" aria-hidden="true"></i><br />
+                <i class="fa fa-chevron-up text-danger" aria-hidden="true"></i>
+            </td>
+            <td>
+                <strong>Escalation</strong> brought <a href="/Cards/Obelus/" class="link-card">Obelus</a>, the hot, new orange console. It enabled the
+                tag-me style and adding some protection from just released <a href="/Cards/BOOM!/" class="link-card">BOOM!</a>. It combos
+                with <a href="/Cards/Hades Shard/" class="link-card">Hades Shard</a> giving insane draw. <a href="/Cards/Black Orchestra/" class="link-card">Black Orchestra</a> was a pleasant
+                decoder alternative.<br />
+            </td>
+        </tr>
+    </table>
+</p>
+<!--Worlds 2016-->
+<p>
+    57% of <a href="https://alwaysberunning.net/tournaments/19/world-championship-2016">World Championship 2016</a> was
+    playing Anarch. Probably this was their bet on the most powerful alternative. This was a good bet as top-16 showed
+    little diversity, 14 contestants were Anarchs. The common choice was Whizzard (33%).
+    <em>Nemamiah</em>, the champion was running it as well: <a href="https://netrunnerdb.com/en/decklist/38841">Papa Smurf</a>
+    <em>(Temüjin Whizzard)</em>. It used regular orange breakers and spent most of its influence on
+    <a href="/Cards/Temüjin Contract/" class="link-card">Temüjin Contract</a> and utilized <a href="/Cards/Employee Strike/" class="link-card">Employee Strike</a>.
+    <a href="https://netrunnerdb.com/en/deck/view/805406">Hate Bear</a>
+    was in demand, relying on <a href="/Cards/Account Siphon/" class="link-card">Account Siphon</a>, floating tags, drawing with
+    <a href="/Cards/Obelus/" class="link-card">Obelus</a> + <a href="/Cards/Hades Shard/" class="link-card">Hades Shard</a> and usually spending its last dot on
+    <a href="/Cards/Rebirth/" class="link-card">Rebirth</a>.
+    <a href="https://netrunnerdb.com/en/deck/view/809643">Rune Soilder</a> also siphoned credits, but broke using
+    <a href="/Cards/Eater/" class="link-card">Eater</a> and included <a href="/Cards/Keyhole/" class="link-card">Keyhole</a> as well.
+    <em>Dumblefork</em> builds were still there with <a href="/Cards/Faust/" class="link-card">Faust</a> and
+    <a href="/Cards/Levy AR Lab Access/" class="link-card">Levy AR Lab Access</a>. Most Whizzard variants have cutlery events as the main gameplan revolved
+    around ICE destruction and deep <a href="/Cards/Medium/" class="link-card">Medium</a> digs.
+    <strong><em>These Whizzard decks dominated the runner meta until MWL 1.2.</em></strong>
+    <em>Valencia</em> was there too showing off very similar
+    archetypes.
+</p>
+<br />
+<!--Intervention-->
+<div class="row blog-image">
+    <div class="col-xs-4">
+        <a href="/Cards/En Passant/"><img src="/static/img/cards/netrunner-en-passant.png" alt="Netrunner En Passant" class="card-small" /></a>
+    </div>
+    <div class="col-xs-4">
+        <a href="/Cards/Citadel Sanctuary/"><img src="/static/img/cards/netrunner-citadel-sanctuary.png" alt="Netrunner Citadel Sanctuary" class="card-small" /></a>
+    </div>
+    <div class="col-xs-4">
+        <a href="/Cards/Ele &quot;Smoke&quot; Scovak: Cynosure of the Net/"><img src="/static/img/cards/netrunner-ele-smoke-scovak-cynosure-of-the-net.png" alt="Netrunner Ele &quot;Smoke&quot; Scovak: Cynosure of the Net" class="card-small" /></a>
+    </div>
+</div>
+<p>
+<table>
+    <tr>
+        <td class="indicator">
+            <i class="fa fa-chevron-down text-danger" aria-hidden="true"></i>
+        </td>
+        <td>
+            <strong>Intervention</strong> rekindled interest for Shapers with the new ID:
+            <a href="https://netrunnerdb.com/en/decklist/39144/internet-famous-1st-and-2nd-11-1-across-two-sc-">Smoke</a>.
+            Also <em>Temüjin Katman</em> and <em>Nexus Kate</em> were quite successful giving corporations a hard time.
+            Players realized that link was essential to beat CtM. Criminals dug up <a href="/Cards/Power Tap/" class="link-card">Power Tap</a>, a card
+            nobody ever though would go into a serious deck. <a href="/Cards/Citadel Sanctuary/" class="link-card">Citadel Sanctuary</a> goes well with Siphons
+            demonstrated by
+            <a href="https://netrunnerdb.com/en/decklist/39471/takeshi-s-castle-1st-bromley-sc-">Power Tap Andy</a>.
+            <a href="/Cards/En Passant/" class="link-card">En Passant</a> + <a href="/Cards/Blackmail/" class="link-card">Blackmail</a> comboed well and was a great addition to the
+            <a href="https://netrunnerdb.com/en/decklist/39283/miffed-val-passant-1st-place-portsmouth-sc-">Miffed Val-Passant</a>
+            build. For a short time more, Valencia was more common than Whizzard.
+        </td>
+    </tr>
+</table>
+</p>
+<br />
+<!--Martial Law-->
+<div class="row blog-image">
+    <div class="col-xs-4">
+        <a href="/Cards/MKUltra/"><img src="/static/img/cards/netrunner-mkultra.png" alt="Netrunner MKUltra" class="card-small" /></a>
+    </div>
+    <div class="col-xs-4">
+        <a href="/Cards/On the Lam/"><img src="/static/img/cards/netrunner-on-the-lam.png" alt="Netrunner On the Lam" class="card-small" /></a>
+    </div>
+    <div class="col-xs-4">
+        <a href="/Cards/Friends in High Places/"><img src="/static/img/cards/netrunner-friends-in-high-places.png" alt="Netrunner Friends in High Places" class="card-small" /></a>
+    </div>
+</div>
+<p>
+<table>
+    <tr>
+        <td class="indicator">
+            <i class="fa fa-chevron-down text-danger" aria-hidden="true"></i>
+        </td>
+        <td>
+            <strong>Martial Law</strong> added <a href="/Cards/MKUltra/" class="link-card">MKUltra</a>, the last piece of the Anarch heap breaker
+            suite. Criminals got a powerful counter to the NBN tag tactics with <a href="/Cards/On the Lam/" class="link-card">On the Lam</a>.
+            <em>Power Tap Andy</em> was still strong, there even was a
+            <a href="https://netrunnerdb.com/en/decklist/39370/binder-fodder-s-revenge-1st-ottawa-gnk-16-12-03-">
+                DLR Nexus Andy</a> variant.
+            <a href="/Cards/Friends in High Places/" class="link-card">Friends in High Places</a> hit the meta and Whizzard's recurring credits and Criminal wealth
+            was more welcomed as ever. Shapers were going down the slope.
+        </td>
+    </tr>
+</table>
+</p>
+<br />
+<!--Quorum-->
+<div class="row blog-image">
+    <div class="col-xs-6 col-md-3 col-md-offset-3">
+        <a href="/Cards/Şifr/"><img src="/static/img/cards/netrunner-ifr.png" alt="Netrunner Şifr" class="card-small" /></a>
+    </div>
+    <div class="col-xs-6 col-md-3 col-md-offset-3">
+        <a href="/Cards/Aaron Marrón/"><img src="/static/img/cards/netrunner-aaron-marrn.png" alt="Netrunner Aaron Marrón" class="card-small" /></a>
+    </div>
+</div>
+<p>
+    <table>
+        <tr>
+            <td class="indicator">
+                <i class="fa fa-chevron-up text-danger" aria-hidden="true"></i><br />
+                <i class="fa fa-chevron-up text-danger" aria-hidden="true"></i>
+            </td>
+            <td>
+                <strong>Quorum</strong> introduced <a href="/Cards/Şifr/" class="link-card">Şifr</a> which was prophesied to bring the end of
+                Netrunner. It was a strong card indeed, offered easy ICE destruction via <a href="/Cards/Parasite/" class="link-card">Parasite</a>
+                and made breaking ICE easier. It was the last nail in the coffin of glacier corporations playing
+                big ICE. <a href="/Cards/Aaron Marrón/" class="link-card">Aaron Marrón</a> helped Criminal even further dealing with NBN tags.
+                <a href="/Cards/Near-Earth Hub: Broadcast Center/" class="link-card">Near-Earth Hub: Broadcast Center</a> took over CtM, the two most popular builds were
+                <a href="https://netrunnerdb.com/en/decklist/40515/d1en-is-my-hero-stroud-store-championship-winner-">
+                    d1en's Railgun</a> and
+                <a href="https://netrunnerdb.com/en/decklist/40523">Team Turtles</a>.
+                <a href="/Cards/Cerebral Imaging: Infinite Frontiers/" class="link-card">Cerebral Imaging: Infinite Frontiers</a>
+                also got successful at that time. Most of the runners were either <em>Dumblefork Whizzard</em>,
+                <em>Temüjin Whizzard</em> or some <em>Andromeda</em> variant.
+            </td>
+        </tr>
+    </table>
+</p>
+<!--Daedalus Complex-->
+<div class="row blog-image">
+    <div class="col-xs-6 col-md-3 col-md-offset-3">
+        <a href="/Cards/Mad Dash/"><img src="/static/img/cards/netrunner-mad-dash.png" alt="Netrunner Mad Dash" class="card-small" /></a>
+    </div>
+    <div class="col-xs-6 col-md-3 col-md-offset-3">
+        <a href="/Cards/Jemison Astronautics: Sacrifice. Audacity. Success./"><img src="/static/img/cards/netrunner-jemison-astronautics-sacrifice.-audacity.-success..png" alt="Netrunner Jemison Astronautics: Sacrifice. Audacity. Success." class="card-small" /></a>
+    </div>
+</div>
+<p>
+    <table>
+        <tr>
+            <td class="indicator">
+                <i class="fa fa-chevron-up text-danger" aria-hidden="true"></i>
+            </td>
+            <td>
+                <strong>Daedalus Complex</strong> contained the new Weyland ID,
+                <a href="/Cards/Jemison Astronautics: Sacrifice. Audacity. Success./" class="link-card">Jemison Astronautics: Sacrifice. Audacity. Success.</a> It was fresh, interesting, but failed
+                to shake the meta. <a href="/Cards/Mad Dash/" class="link-card">Mad Dash</a> fits nice in Adam (<a href="/Cards/Find the Truth/" class="link-card">Find the Truth</a>) and
+                Shaper (<a href="/Cards/Indexing/" class="link-card">Indexing</a>). <em>NBN: NEH</em> was getting more
+                dominant, so did <em>Whizzard</em>. We still saw the Whizzard archetypes we had on Worlds 2016, just this time
+                with <a href="/Cards/Şifr/" class="link-card">Şifr</a> and <a href="/Cards/Aaron Marrón/" class="link-card">Aaron Marrón</a> appearing occasionally. This trend
+                continued throughout <strong>Station One</strong> as well.
+            </td>
+        </tr>
+    </table>
+</p>
+<br />
+<!--MWL-->
+<a name="mwl" class="anchor">&nbsp;</a>
+<h4>Thoughts on previous Most Wanted Lists, rant</h4>
+<p>
+    I was always optimistic when I heard a new MWL announcement. I wholeheartedly believed that they would make the impact
+    we desired so much. Now I am a bit sceptical.
+</p>
+<p>
+    Putting extra
+    influence on powerful cards will not make those cards disappear from the meta. <strong><em>You will still use the powerful cards
+    and you will save influence on the weaker ones.</em></strong> Also this locks the card in its original faction by
+    making it harder to splash for others. Which keeps the already mighty faction dominant.
+    As I see it, rule/card changes should make overpowered
+    cards more balanced. The truth is MWLs did not solve any of the card-inbalance or faction-inbalance problems.
+</p>
+<div class="blog-image">
+    <img src="/static/img/blog/anarch-drop.png" class="blog-big-picture" />
+</div>
+<p>
+    Look at the chart above. Anarch have been overpowered for more than 2 years.
+    <strong>MWL 1.0</strong> and <strong>MWL 1.1</strong>
+    did not solve this problem. The biggest hit orange players received so far was due to one card:
+    <a href="/Cards/Exchange of Information/" class="link-card">Exchange of Information</a>. I know, I know. You hated this card, hated to be up against it, it felt
+    unfair. Combined with SYNC it made a deck which gave Anarchs a hard time. Shapers had tools the handle it
+    (instant <a href="/Cards/Clot/" class="link-card">Clot</a>). Criminals had the money and pressure for counter strategies. Factions were balanced
+    for a short time. Don't you miss this? (Yes, this depended on NBN dominance as well, which is another problem.)
+</p>
+<p>
+    <strong><em>The moral of the story is that you can balance the meta with a single card.</em></strong>
+    That card doesn't even have to be
+    a silver bullet itself. Competitive players will always gravitate towards the most powerful cards, decks and to
+    counter the strongest strategies.
+</p>
+<br />
+<!--Newest MWL-->
+<h4>The newest MWL (1.2)</h4>
+<table class="table table-striped" style="border: 1px solid black;">
+    <thead>
+        <tr>
+            <th class="text-center">runner</th>
+            <th class="text-center">corporation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2" class="text-center">
+                <em>1 influence</em>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li><a href="/Cards/Cerberus &quot;Lady&quot; H1/" class="link-card">Cerberus &quot;Lady&quot; H1</a></li>
+                    <li><a href="/Cards/Clone Chip/" class="link-card">Clone Chip</a></li>
+                    <li><a href="/Cards/D4v1d/" class="link-card">D4v1d</a></li>
+                    <li><a href="/Cards/Parasite/" class="link-card">Parasite</a></li>
+                    <li><a href="/Cards/Temüjin Contract/" class="link-card">Temüjin Contract</a> <strong>(new)</strong></li>
+                    <li><a href="/Cards/Wyldside/" class="link-card">Wyldside</a></li>
+                    <li><a href="/Cards/Yog.0/" class="link-card">Yog.0</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="/Cards/Architect/" class="link-card">Architect</a></li>
+                    <li><a href="/Cards/Bio-Ethics Association/" class="link-card">Bio-Ethics Association</a> <strong>(new)</strong></li>
+                    <li><a href="/Cards/Breaking News/" class="link-card">Breaking News</a></li>
+                    <li><a href="/Cards/Mumbad City Hall/" class="link-card">Mumbad City Hall</a> <strong>(new)</strong></li>
+                    <li><a href="/Cards/Mumba Temple/" class="link-card">Mumba Temple</a></li>
+                    <li><a href="/Cards/NAPD Contract/" class="link-card">NAPD Contract</a></li>
+                    <li><a href="/Cards/SanSan City Grid/" class="link-card">SanSan City Grid</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center">
+                <em>3 influence</em> <strong>(new)</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li><a href="/Cards/Blackmail/" class="link-card">Blackmail</a> <strong>(new)</strong></li>
+                    <li><a href="/Cards/DDoS/" class="link-card">DDoS</a> <strong>(new)</strong></li>
+                    <li><a href="/Cards/Faust/" class="link-card">Faust</a> <strong>(new)</strong></li>
+                    <li><a href="/Cards/Rumor Mill/" class="link-card">Rumor Mill</a> <strong>(new)</strong></li>
+                    <li><a href="/Cards/Şifr/" class="link-card">Şifr</a> <strong>(new)</strong></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="/Cards/Sensie Actors Union/" class="link-card">Sensie Actors Union</a> <strong>(new)</strong></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center">
+                <em>0 influence</em> <strong>(removed from MWL)</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li><a href="/Cards/Desperado/" class="link-card">Desperado</a></li>
+                    <li><a href="/Cards/Prepaid VoicePAD/" class="link-card">Prepaid VoicePAD</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="/Cards/Eli 1.0/" class="link-card">Eli 1.0</a></li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    The <a href="https://www.fantasyflightgames.com/en/news/2017/4/12/enhanced-enforcement-tactics/">Newest NAPD Most Wanted List</a>
+    features a two-tier system. There are cards with 1 influence penalty and some have 3 influence penalty. <em>(There are
+    also slight rule changes on this "penalty", but they are still ambiguities which have to be addressed officially.)</em>
+    This surely changes things compared to the previous MWLs.
+</p>
+<p>
+    It's nearly impossible to pack 3 cards with 3 extra influence each into your deck. Though it's still possible to
+    pack only one. As you can see, Anarchs are main target on the runner side, which I find fair due to their current
+    competitiveness.
+</p>
+<p>
+    <strong>Anarchs</strong> will probably drop <a href="/Cards/Faust/" class="link-card">Faust</a>. They would have to use multiple copies since they
+    lack good breaker tutors (<em><a href="/Cards/Retrieval Run/" class="link-card">Retrieval Run</a> is still an option</em>). Same goes for
+    <a href="/Cards/Şifr/" class="link-card">Şifr</a>. They will have to rely on their core- and heap breaker suite accompanied by
+    <a href="/Cards/Datasucker/" class="link-card">Datasucker</a> and <a href="/Cards/D4v1d/" class="link-card">D4v1d</a>. This gameplan is still strong, mind you. An updated
+    <em>Dumblefork</em> or <em>Rune Soilder/Angery Whizzard</em> (using <a href="/Cards/Account Siphon/" class="link-card">Account Siphon</a>, <a href="/Cards/Keyhole/" class="link-card">Keyhole</a>,
+    <a href="/Cards/Eater/" class="link-card">Eater</a>) are valid options as the asset heavy decks (e.g. <em>Team Turtles</em>) are here to stay.
+    It's probably <em>Valencia</em> who suffers the fatal blow here.
+</p>
+<p>
+    <strong>Criminals</strong> are loving the changes. They have to pay extra for
+    <a href="/Cards/Temüjin Contract/" class="link-card">Temüjin Contract</a>, but <a href="/Cards/Desperado/" class="link-card">Desperado</a> is off the list and makes it even.
+    The other factions will probably drop this lucrative card and go with <a href="/Cards/Prepaid VoicePAD/" class="link-card">Prepaid VoicePAD</a>
+    instead.
+</p>
+<p>
+    <strong>Shapers</strong> are resurrecting <em>PPVP Kate</em> that is for sure. It was pretty powerful last time it
+    was around. Stealth variants are also an option as high-strength ICE is back in fashion. The inclusion of
+    <a href="/Cards/DDoS/" class="link-card">DDoS</a> to MWL was probably to bury non-interactive <a href="/Cards/False Echo/" class="link-card">False Echo</a>+<a href="/Cards/Keyhole/" class="link-card">Keyhole</a> decks.
+    I'm certain a similar monstrosity can be built with green cards nevertheless.
+</p>
+<p>
+    <a href="/Cards/Şifr/" class="link-card">Şifr</a> and <a href="/Cards/Rumor Mill/" class="link-card">Rumor Mill</a> are out of the way, <strong>corporations</strong>
+    will gravitate toward glacier. Especially be on the lookout for <a href="/Cards/Sandburg/" class="link-card">Sandburg</a> builds. <em>Weyland</em>
+    will be popping up more often.
+</p>
+<p>
+    <strong><em>To sum things up:</em></strong> Major blow to Anarch, but they won't disappear. You will see a lot of
+    glacier. Be prepared to whine about something new.
+</p>
+<hr />
+<h4>Support me</h4>
+<p>
+    Did you like this article? Are you using
+    <img src="https://alwaysberunning.net/favicon-96x96.png" class="img-inline" /><a href="https://alwaysberunning.net">AlwaysBeRunning.net</a> or
+    <img src="http://www.knowthemeta.com/favicon-96x96.png" class="img-inline" /><a href="http://www.knowthemeta">KnowTheMeta</a>?
+</p>
+<p>
+    If so, please check out the ways you can support me and my sites:<br />
+    <br />
+<div class="text-center">
+    <a href="https://alwaysberunning.net/support-me" class="btn btn-warning">Support Me</a>
+</div>
+</p>
+<hr />
+<h4>Links</h4>
+<p>
+    Example decks in article:
+<ul>
+    <li>
+        <a href="https://netrunnerdb.com/en/decklist/35373/eoi-sync">
+            EoI SYNC
+        </a>
+        by <em>Calimsha</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/decklist/37097/1st-place-uk-nationals-2016-ctm-tempo-rush">
+            CTM Tempo rush
+        </a>
+        by <em>Vikz93</em>
+    </li>
+    <li>
+        <a href="http://www.acoo.net/deck/19729/">
+            Trellbro Andy
+        </a>
+        <em>(Andy Sucker)</em> by <em>Michiel (Okkdoko) Questier</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/decklist/37432/temujin-katman">Temujin Katman</a>
+        by <em>SneekdoorMelb</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/decklist/38841">Papa Smurf</a>
+        <em>(Temüjin Whizzard)</em> by <em>Nemamiah</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/deck/view/805406">Credit Clicker 5000</a>
+        by <em>(Hate Bear)</em> by <em>tmoiynmwg</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/deck/view/809643">Rune Soilder</a>
+        by <em>Cerberus</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/decklist/39144/internet-famous-1st-and-2nd-11-1-across-two-sc-">
+            Internet Famous
+        </a>
+        <em>(Smoke)</em> br <em>CodeMarvelous</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/decklist/39471/takeshi-s-castle-1st-bromley-sc-">Takeshi's Castle</a>
+        <em>(Power Tap Andy)</em> by <em>rojazu</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/decklist/39283/miffed-val-passant-1st-place-portsmouth-sc-">Miffed Val-Passant</a>
+        by <em>Shmeguy</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/decklist/39370/binder-fodder-s-revenge-1st-ottawa-gnk-16-12-03-">
+            Binder Fodder's Revenge
+        </a>
+        <em>(DLR Nexus Andy)</em> by <em>lopert</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/decklist/40515/d1en-is-my-hero-stroud-store-championship-winner-">
+            D1en is my Hero
+        </a>
+        <em>(D1en's Railgun)</em> by <em>Cerberus</em>
+    </li>
+    <li>
+        <a href="https://netrunnerdb.com/en/decklist/40523">Team Turtles</a>
+        by <em>imrahil</em>
+    </li>
+</ul>
+Suggested reading on historic meta:
+<ul>
+    <li>
+        <a href="/Blog/mwl-2">New MWL and other changes</a>
+        by <em>Necro</em> - <strong>Fear the Masses</strong>
+    </li>
+    <li>
+        <a href="https://stimhack.com/actually-parasite-is-good-and-icebreakers-are-bad-by-simonmoon/">
+            Actually, Parasite is Good and Icebreakers are Bad
+        </a> by <em>SimonMoon</em>
+    </li>
+    <li>
+        <a href="https://stimhack.com/the-state-of-netrunner/">
+            The State of Netrunner
+        </a> by <em>Elusive</em>
+    </li>
+    <li>
+        <a href="http://www.knowthemeta.com/Blog/rise-of-cerebral-imaging/">The rise of Cerebral Imaging</a>
+        by <em>Necro</em> - <strong>Quorum</strong>
+    </li>
+    <liL>
+        Every "Meta Snapshot" article on <a href="https://sneakdoor.wordpress.com/">Sneakdoor</a>
+        by <em>YOG0</em>
+    </liL>
+</ul>
+Thanks to <strong>percomis</strong> for additional observations and thoughts.
+</p>
+<script type="text/javascript" src="https://www.google.com/jsapi?autoload={             'modules':[{               'name':'visualization',               'version':'1',               'packages':['corechart']             }]           }"></script>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    google.setOnLoadCallback(loadIDsOverTime);
+
+    var factionData = { anarch: {}, shaper: {}, criminal: {}};
+    var runnerIDs = { anarch: [], shaper: [], criminal: []};
+    var cardpacks = [], dataTable, idsOverTimeChart, selectedFaction = 'anarch', selectedData = 'top',
+            chartEl = 'chart-ids', cropFromPackIndex=26, stopFromPackIndex=26;
+    var chartOptions = {
+        'isStacked': true,
+        'height': 300,
+        'curveType': 'function',
+        'vAxis': { format: 'percent', textPosition: 'out', viewWindowMode: 'pretty', viewWindow: { min: 0, max: 0.7 } },
+        'chartArea': {  width: document.getElementById(chartEl).offsetWidth - 230, height: "70%", left: 100, top: 0 },
+        'hAxis': { showTextEvery: 1, slantedText: 'true' },
+        'legend': { position: 'right'},
+        'lineWidth': 3
+    };
+
+    function loadIDsOverTime() {
+        loadPacks(function() {
+            loadIDs(runnerIDs, function() {
+                drawIDsOverTime(runnerIDs.anarch, factionData.anarch, cardpacks, 'top');
+
+                // redraw if needed
+                $(window).resize(function(){
+                    chartOptions.chartArea.width = document.getElementById(chartEl).offsetWidth - 230;
+                    idsOverTimeChart.draw(dataTable, chartOptions);
+                });
+            });
+        });
+    }
+
+    function clickFilter(faction, datatype) {
+        $('#faction-'+selectedFaction).removeClass('active');
+        selectedFaction = faction;
+        $('#faction-'+selectedFaction).addClass('active');
+        $('#data-'+selectedData).removeClass('active');
+        selectedData = datatype;
+        $('#data-'+selectedData).addClass('active');
+        drawIDsOverTime(runnerIDs[selectedFaction], factionData[selectedFaction], cardpacks, selectedData);
+    }
+
+    /*]]>*/
+</script></div>
+                <div class="col-xs-12 text-right top-buffer-big">
+                    <strong>Necro</strong><br />
+                    <small><span>2017.04.14.</span> - <span>Station One</span></small>
+                </div>
+
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /*<![CDATA[*/
+                     var disqus_config = function () {
+                     this.page.url = 'http://www.knowthemeta.com/Blog/' + 'history-of-anarch-part-2';
+                     this.page.identifier = 'Blog/' + 'history-of-anarch-part-2';
+                     };
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+
+                        s.src = '//knowthemeta.disqus.com/embed.js';
+
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                    /*]]>*/
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div>
+        <!--<script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+        <!--<ins class="adsbygoogle"-->
+             <!--style="display:block"-->
+             <!--data-ad-client="ca-pub-1839926547748052"-->
+             <!--data-ad-slot="7777513729"-->
+             <!--data-ad-format="auto"></ins>-->
+        <!--<script>-->
+            <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
+        <!--</script>-->
+    </div>
+            </div>
+        </div>
+        <div>
+        <hr />
+        <footer>
+            <div class="pull-right">
+        <div class="pull-right">
+            <a href="https://www.facebook.com/netrunnerknowthemeta/"><img src="/static/img/social-fb.png" /></a>
+            <a href="https://twitter.com/knowthemeta"><img src="/static/img/social-twitter.png" /></a>
+            <a href="http://forum.stimhack.com/t/know-the-meta/6306"><img src="/static/img/social-stimhack.png" /></a>
+        </div>
+    </div>
+            <p>&copy; Necro 2017</p>
+            <p><small>The information presented on this site about Android:Netrunner, both literal and graphical,
+                is copyrighted by Fantasy Flight Games and/or Wizards of the Coast.<br />
+                This website is not produced, endorsed, supported, or affiliated with Fantasy Flight Games and/or
+                Wizards of the Coast.</small></p>
+        </footer>
+    </div>
+    </div>
+    <body>
+        <script type="text/javascript" src="/static/js/ktm3.concat.min.js"></script>
+</body>
+    <script id="dsq-count-scr" src="//knowthemeta.disqus.com/count.js" async="async"></script>
+    <body>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-1954357-9', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Tag Manager -->
+</body>
+</body>
+</html>
