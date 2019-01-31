@@ -62,6 +62,9 @@
                                 <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
                             </li>
                             <li>
+                                <a href="/DPStats/System Core 2019/">System Core 2019</a>
+                            </li>
+                            <li>
                                 <a href="/DPStats/Magnum Opus/">Magnum Opus</a>
                             </li>
                             <li>
@@ -227,18 +230,18 @@
                             <div class="col-xs-8">
                                 <div class="hidden" id="last3">
                                     <span class="glyphicon glyphicon-stop last3-1"></span>
+                                    <a href="/MDSIdentity/System Core 2019/Khan: Savvy Skiptracer">
+                                        <span>System Core 2019</span>
+                                    </a>
+                                    <br />
+                                    <span class="glyphicon glyphicon-stop last3-2"></span>
                                     <a href="/MDSIdentity/Magnum Opus/Khan: Savvy Skiptracer">
                                         <span>Magnum Opus</span>
                                     </a>
                                     <br />
-                                    <span class="glyphicon glyphicon-stop last3-2"></span>
+                                    <span class="glyphicon glyphicon-stop last3-3"></span>
                                     <a href="/MDSIdentity/R&amp;R MWL 2.2/Khan: Savvy Skiptracer">
                                         <span>R&amp;R MWL 2.2</span>
-                                    </a>
-                                    <br />
-                                    <span class="glyphicon glyphicon-stop last3-3"></span>
-                                    <a href="/MDSIdentity/Reign and Reverie/Khan: Savvy Skiptracer">
-                                        <span>Reign and Reverie</span>
                                     </a>
                                 </div>
                                 <div class="hidden" id="legend"></div>
@@ -336,7 +339,7 @@
             <a href="http://forum.stimhack.com/t/know-the-meta/6306"><img src="/static/img/social-stimhack.png" /></a>
         </div>
     </div>
-            <p>&copy; Necro 2017</p>
+            <p>&copy; Necro 2019</p>
             <p><small>The information presented on this site about Android:Netrunner, both literal and graphical,
                 is copyrighted by Fantasy Flight Games and/or Wizards of the Coast.<br />
                 This website is not produced, endorsed, supported, or affiliated with Fantasy Flight Games and/or
@@ -403,7 +406,7 @@
                         });
                         $('#legend').removeClass('hidden');
                     } else if ('Escalation' === "Last 3 aggregated") {
-                        var cardpools = ['Magnum Opus','R&R MWL 2.2','Reign and Reverie','Kampala Ascendent','Whispers in Nalubaale','The Devil and the Dragon','Council of the Crest','Down the White Nile','Sovereign Sight','Revised Core Set','Crimson Dust','Free Mars','Blood and Water','Earth\'s Scion','Terminal Directive','Station One','Daedalus Complex','Quorum','Martial Law','Intervention','Escalation','Blood Money','23 Seconds','Fear the Masses','The Liberated Mind','Salsette Island','Democracy and Dogma','Business First','Kala Ghoda','D&D, post-MWL','Data and Destiny','The Universe of Tomorrow','Old Hollywood','The Underway','Chrome City','Breaker Bay','The Valley','Order and Chaos','The Source','All That Remains','Up and Over'];
+                        var cardpools = ['System Core 2019','Magnum Opus','R&R MWL 2.2','Reign and Reverie','Kampala Ascendent','Whispers in Nalubaale','The Devil and the Dragon','Council of the Crest','Down the White Nile','Sovereign Sight','Revised Core Set','Crimson Dust','Free Mars','Blood and Water','Earth\'s Scion','Terminal Directive','Station One','Daedalus Complex','Quorum','Martial Law','Intervention','Escalation','Blood Money','23 Seconds','Fear the Masses','The Liberated Mind','Salsette Island','Democracy and Dogma','Business First','Kala Ghoda','D&D, post-MWL','Data and Destiny','The Universe of Tomorrow','Old Hollywood','The Underway','Chrome City','Breaker Bay','The Valley','Order and Chaos','The Source','All That Remains','Up and Over'];
                         for (i=0; i < 3; i++) {
                             $('#legend').append($('<span>', {
                                 class: 'glyphicon glyphicon-stop',
@@ -429,13 +432,13 @@
                             stroke = '#FFF';
                             if ('Escalation' === "Last 3 aggregated") {
                                 switch (element.cardpool) {
-                                    case 'Magnum Opus':
+                                    case 'System Core 2019':
                                         color = getIDcolor('criminal', 1, 4);
                                         break;
-                                    case 'R&R MWL 2.2':
+                                    case 'Magnum Opus':
                                         color = getIDcolor('criminal', 2, 4);
                                         break;
-                                    case 'Reign and Reverie':
+                                    case 'R&R MWL 2.2':
                                         color = getIDcolor('criminal', 3, 4);
                                         break;
                                 }

@@ -62,6 +62,9 @@
                                 <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
                             </li>
                             <li>
+                                <a href="/DPStats/System Core 2019/">System Core 2019</a>
+                            </li>
+                            <li>
                                 <a href="/DPStats/Magnum Opus/">Magnum Opus</a>
                             </li>
                             <li>
@@ -283,7 +286,7 @@
             <a href="http://forum.stimhack.com/t/know-the-meta/6306"><img src="/static/img/social-stimhack.png" /></a>
         </div>
     </div>
-            <p>&copy; Necro 2017</p>
+            <p>&copy; Necro 2019</p>
             <p><small>The information presented on this site about Android:Netrunner, both literal and graphical,
                 is copyrighted by Fantasy Flight Games and/or Wizards of the Coast.<br />
                 This website is not produced, endorsed, supported, or affiliated with Fantasy Flight Games and/or
@@ -308,7 +311,7 @@
             } else {
                 $('#link-side').removeClass('hidden');
             }
-            dataGeneral.push({pack: 'Revised Core Set', score: 100, cards: [{title: 'Jinteki: Personal Evolution', faction: 'jinteki', score: 100}]});    // adding ID as card
+            dataGeneral.push({pack: 'System Core 2019', score: 100, cards: [{title: 'Jinteki: Personal Evolution', faction: 'jinteki', score: 100}]});    // adding ID as card
             populateBuyersPacks(dataGeneral, "/JSON/Identity/Last%203%20aggregated/" + 'Jinteki: Personal Evolution', 'id', function () {
                 displayBuyersCards(dataGeneral,
                         displayAmazon(dataGeneral, 'amazon'))
@@ -316,7 +319,7 @@
         // for faction
         } else if ('jinteki' !== null) {
             $('#ids').removeClass('hidden');
-            var cardpools = ['Magnum Opus','R&R MWL 2.2','Reign and Reverie','Kampala Ascendent','Whispers in Nalubaale','The Devil and the Dragon','Council of the Crest','Down the White Nile','Sovereign Sight','Revised Core Set','Crimson Dust','Free Mars','Blood and Water','Earth\'s Scion','Terminal Directive','Station One','Daedalus Complex','Quorum','Martial Law','Intervention','Escalation','Blood Money','23 Seconds','Fear the Masses','The Liberated Mind','Salsette Island','Democracy and Dogma','Business First','Kala Ghoda','D&D, post-MWL','Data and Destiny','The Universe of Tomorrow','Old Hollywood','The Underway','Chrome City','Breaker Bay','The Valley','Order and Chaos','The Source','All That Remains','Up and Over'];
+            var cardpools = ['System Core 2019','Magnum Opus','R&R MWL 2.2','Reign and Reverie','Kampala Ascendent','Whispers in Nalubaale','The Devil and the Dragon','Council of the Crest','Down the White Nile','Sovereign Sight','Revised Core Set','Crimson Dust','Free Mars','Blood and Water','Earth\'s Scion','Terminal Directive','Station One','Daedalus Complex','Quorum','Martial Law','Intervention','Escalation','Blood Money','23 Seconds','Fear the Masses','The Liberated Mind','Salsette Island','Democracy and Dogma','Business First','Kala Ghoda','D&D, post-MWL','Data and Destiny','The Universe of Tomorrow','Old Hollywood','The Underway','Chrome City','Breaker Bay','The Valley','Order and Chaos','The Source','All That Remains','Up and Over'];
             populateBuyersPacks(dataGeneral, "/JSON/Faction/" + cardpools[0] + "/" + 'jinteki', 'faction', function () {
                 displayBuyersCards(dataGeneral,
                         displayAmazon(dataGeneral, 'amazon'))}, "/JSON/Tournament/" + 'corp' + "/Last%203%20aggregated", 'jinteki');
