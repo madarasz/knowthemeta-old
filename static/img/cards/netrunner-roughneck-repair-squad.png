@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deckbuilder &middot; NetrunnerDB</title>
+    <link rel="icon" sizes="16x16" href="/favicon.png" />
+    <link rel="icon" sizes="196x196" href="/icon.png" />
+    <link rel="apple-touch-icon" sizes="129x129" href="/apple-touch-icon.png" />
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:image" content="https://netrunnerdb.com/icon.png" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.3.0/introjs.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/latofonts.css">
+    <link rel="stylesheet" href="/netrunnerfont.css">
+
+    <script src="/bundles/fosjsrouting/js/router.js"></script>
+    <script src="/js/routing?callback=fos.Router.setData&amp;version="></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lie/3.1.0/lie.polyfill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/3.0.9/highcharts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagedown/1.0/Markdown.Converter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.textcomplete/1.7.1/jquery.textcomplete.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forerunnerdb/1.3.867/fdb-all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.4.2/localforage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.3.0/intro.js"></script>
+    <script src="/lib/bootstrap-toggle-checklist.js"></script>
+    <script src="/lib/jquery-persistence.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#000"
+            },
+            "button": {
+              "background": "#f1d600"
+            }
+          }
+        })});
+    </script>
+    <script type="text/javascript">
+      var NRDB = {
+        data_loaded: $.Callbacks(),
+        api_url: {
+          cycles: '/api/2.0/public/cycles',
+          packs: '/api/2.0/public/packs',
+          cards: '/api/2.0/public/cards',
+          factions: '/api/2.0/public/factions',
+          types: '/api/2.0/public/types',
+          sides: '/api/2.0/public/sides',
+          mwl: '/api/2.0/public/mwl'
+        },
+        locale: 'en'
+      };
+      moment.locale(window.navigator.language);
+    </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131671930-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131671930-1');
+    </script>
+        <script src="/js/nrdb.js"></script>
+    <script src="/js/nrdb.user.js"></script>
+    <script src="/js/nrdb.data.js"></script>
+    <script src="/js/nrdb.format.js"></script>
+    <script src="/js/nrdb.tip.js"></script>
+    <script src="/js/nrdb.ui.js"></script>
+
+    
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+                    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <span class="icon icon-link-half-top"></span>
+              <span class="icon icon-link-half-bottom"></span>
+              NetrunnerDB
+            </a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/en/decks">My Decks</a></li>
+              <li><a href="/en/decklists">Decklists</a></li>
+              <li><a href="/en/sets">Sets</a></li>
+              <li class="hidden-sm dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Factions <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation" class="dropdown-header">Runner</li>
+                  <li><a href="/en/faction/anarch"><span class="icon icon-anarch influence-anarch"></span> Anarch</a></li>
+                  <li><a href="/en/faction/criminal"><span class="icon icon-criminal influence-criminal"></span> Criminal</a></li>
+                  <li><a href="/en/faction/shaper"><span class="icon icon-shaper influence-shaper"></span> Shaper</a></li>
+                  <li><a href="/en/faction/mini-factions"><span style="padding-left:16px">Mini-factions</span></a></li>
+                  <li class="divider"></li>
+                  <li role="presentation" class="dropdown-header">Corp</li>
+                  <li><a href="/en/faction/haas-bioroid"><span class="icon icon-haas-bioroid influence-haas-bioroid"></span> Haas-Bioroid</a></li>
+                  <li><a href="/en/faction/jinteki"><span class="icon icon-jinteki influence-jinteki"></span> Jinteki</a></li>
+                  <li><a href="/en/faction/nbn"><span class="icon icon-nbn influence-nbn"></span> NBN</a></li>
+                  <li><a href="/en/faction/weyland-consortium"><span class="icon icon-weyland-consortium influence-weyland-consortium"></span> Weyland Consortium</a></li>
+                </ul>
+              </li>
+              <li class="hidden-sm"><a href="/en/reviews">Reviews</a></li>
+              <li><a href="/en/rulings">Rulings</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown hidden-xs hidden-lg">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-search"></span></a>
+                <div class="dropdown-menu">
+                  <form method="get" action="/find/">
+                    <input type="text" placeholder="Card Search" class="form-control" name="q" title="Search filters:
+   default, no prefix - title (word or &#34;phrase with spaces&#34;)
+   x - text (word or &#34;phrase with spaces and [symbols]&#34;)
+   t - type (word)
+   s - subtype (word or &#34;multiple - subtypes&#34;)
+   f - faction (letter or '-' for neutral)
+   p - strength (number)
+   m - memory (number)
+   o - cost (number)
+   n - influence (number)
+   d - side (letter)
+   c - cycle (number)
+   e - set (acronym or shortcode, aka 'sc19')
+   a - flavor (word or &#34;phrase with spaces&#34;)
+   i - illustrator (word or &#34;phrase with spaces&#34;)
+   u - unique (0 for non-unique, 1 for unique)
+   y - quantity in pack (number)
+
+Filter operators:
+   : - include or is equal to the condition
+   ! - does not include or is not equal the condition
+   &gt; - if numeric, is greater than condition
+   &lt; - if numeric, is less than condition
+   | (pipe) - 'OR' multiple conditions together
+
+Examples:
+   [ t:asset f:j|hb o&gt;2 ] - Jinteki or Haas-Bioroid assets with rez cost greater than 2
+   [ t:program s!icebreaker n&lt;2 ] - non-icebreaker programs with 0 or 1 influence
+   [ x:&#34;the Corp loses 1[credit]&#34; ] - Amina, Corporate &#34;Grant&#34;, and Lamprey
+">
+                  </form>
+                </div>
+              </li>
+              <li><a href="/en/syntax">Syntax</a></li>
+              <li><a href="/en/search">Advanced</a></li>
+              <li>|</li>
+              <li id="login">
+                <a href="#" class="dropdown-toggle loginname" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><b class="caret"></b></a>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right visible-lg-block visible-xs-block" action="/find/">
+              <div class="form-group">
+                <input type="text" placeholder="Card Search" class="form-control" name="q" title="Search filters:
+   default, no prefix - title (word or &#34;phrase with spaces&#34;)
+   x - text (word or &#34;phrase with spaces and [symbols]&#34;)
+   t - type (word)
+   s - subtype (word or &#34;multiple - subtypes&#34;)
+   f - faction (letter or '-' for neutral)
+   p - strength (number)
+   m - memory (number)
+   o - cost (number)
+   n - influence (number)
+   d - side (letter)
+   c - cycle (number)
+   e - set (acronym or shortcode, aka 'sc19')
+   a - flavor (word or &#34;phrase with spaces&#34;)
+   i - illustrator (word or &#34;phrase with spaces&#34;)
+   u - unique (0 for non-unique, 1 for unique)
+   y - quantity in pack (number)
+
+Filter operators:
+   : - include or is equal to the condition
+   ! - does not include or is not equal the condition
+   &gt; - if numeric, is greater than condition
+   &lt; - if numeric, is less than condition
+   | (pipe) - 'OR' multiple conditions together
+
+Examples:
+   [ t:asset f:j|hb o&gt;2 ] - Jinteki or Haas-Bioroid assets with rez cost greater than 2
+   [ t:program s!icebreaker n&lt;2 ] - non-icebreaker programs with 0 or 1 influence
+   [ x:&#34;the Corp loses 1[credit]&#34; ] - Amina, Corporate &#34;Grant&#34;, and Lamprey
+">
+              </div>
+            </form>
+          </div><!--/.navbar-collapse -->
+                  </div>
+      </nav>
+
+      <div class="container">
+                              </div>
+
+      <div class="container">
+<h1 class="pagetitle">Sorry.</h1>
+<p class="lead">I tried very hard, but I couldn't find what you're looking for.</p>
+<p><small>And that's pretty much it.</small></p>
+</div>
+      <div id="push"></div>
+    </div>
+    <footer class="hidden-print">
+      <div class="container">
+
+        
+      </div>
+    </footer>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      </body>
+</html>
