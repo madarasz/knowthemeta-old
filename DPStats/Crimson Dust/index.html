@@ -297,10 +297,13 @@
                             Runner deck highlights
                             <a class="my-popover" data-placement="right" data-toggle="popover" data-content="popular and strong deck archetypes" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
                         </h4>
+                        <div class="alert alert-warning text-center top-buffer-big hidden" role="alert" id="no-deckhightlight-runner">
+                            No notable decks
+                        </div>
                         <div id="runner-deck-highlights-spinner" class="spinner"></div>
                         <table id="runner-deck-highlights" class="table table-condensed notop"></table>
                         <div class="text-center">
-                            <a class="btn btn-xs btn-primary" id="button-highlight-runner" onclick="displayMore(deckHighLights['runner'], 'runner-deck-highlights', '#button-highlight-runner', highlightStartindex['runner'])">more</a>
+                            <a class="btn btn-xs btn-primary" id="button-runner-deck-highlights" onclick="displayMore(deckHighLights['runner'], 'runner-deck-highlights', highlightStartindex['runner'])">more</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
@@ -308,10 +311,13 @@
                             Corp deck highlights
                             <a class="my-popover" data-placement="right" data-toggle="popover" data-content="popular and strong deck archetypes" title=""><sup><i class="fa fa-info-circle"></i></sup></a>
                         </h4>
+                        <div class="alert alert-warning text-center top-buffer-big hidden" role="alert" id="no-deckhightlight-corp">
+                            No notable decks
+                        </div>
                         <div id="corp-deck-highlights-spinner" class="spinner"></div>
                         <table id="corp-deck-highlights" class="table table-condensed notop"></table>
                         <div class="text-center">
-                            <a class="btn btn-xs btn-primary" id="button-highlight-corp" onclick="displayMore(deckHighLights['corp'], 'corp-deck-highlights', '#button-highlight-corp', highlightStartindex['corp'])">more</a>
+                            <a class="btn btn-xs btn-primary" id="button-corp-deck-highlights" onclick="displayMore(deckHighLights['corp'], 'corp-deck-highlights', highlightStartindex['corp'])">more</a>
                         </div>
                     </div>
                 </div>
@@ -694,14 +700,14 @@
                 startindex[0]++;
                 counter++;
             }
+            if (startindex[0] == decklist.length) {
+                $('#button-'+locator).hide();
+            }
         }
 
         // display more decklist highlights
-        function displayMore(decklist, listLocator, buttonLocator, startindex) {
-            printDecks(decklist, 0, 3, listLocator, startindex);
-            if (startindex[0] == decklist.length) {
-                $(buttonLocator).hide();
-            }
+        function displayMore(decklist, listLocator, startindex) {
+            printDecks(decklist, 0, 3, listLocator, startindex);           
         }
 
         // turn archetype clusters into decklists
@@ -723,6 +729,13 @@
                         influence.push({count: infCounts[u], inf: infNums[u], card: infCards[u]});
                     }
                     influence.sort(function(a,b) {return b.inf - a.inf});
+                    var player = clusters[i].elements[clusters[i].strengthIndex].shortHtmlDigest
+                                .match(/<\/strong> by ([a-zA-Z0-9 \*\.\-\/\(\):_,é]+)<br/);
+                    if (player == null) {
+                        player = '';
+                    } else {
+                        player = player[1];
+                    }
 
                     // adding deck to list
                     deckArray.push({
@@ -730,8 +743,7 @@
                         url: clusters[i].elements[clusters[i].strengthIndex].deckURL,
                         strength: clusters[i].strength,
                         identity: identity,
-                        player: clusters[i].elements[clusters[i].strengthIndex].shortHtmlDigest
-                                .match(/<\/strong> by ([a-zA-Z0-9 \*\.\-\/:_]+)<br/)[1],
+                        player: player,
                         influence: influence.map(function(x) { return x.count + "x " + x.card}).join(", ")
                     })
                 }
@@ -797,7 +809,7 @@
             }
 
             // most used cards
-            if ('Crimson Dust' !== "Last 3 aggregated" && 'Crimson Dust' !== "D&D, post-MWL" && allDecks > 15) {
+            if ('Crimson Dust' !== "Last 3 aggregated" && 'Crimson Dust' !== "D&D, post-MWL" && 'Crimson Dust' !== "R&R MWL 2.2" && allDecks > 15) {
                 $.ajax({
                     url: "/JSON/Cards/" + side + "/" + dpname,
                     dataType: "json",
@@ -833,12 +845,12 @@
 
             // decklist highlights
             data.sort(tournamentShorters.byAllDeck);
-            $.each(data, function(index, element) {
-                if (element.allDeckCount >= 8) {
-                    //console.log("Processing ID: " + element.title);
+            for (var i = 0; i < data.length; i++) {
+                if (data[i].allDeckCount >= 8) {
+                    //console.log("Processing ID: " + data[i].title);
                     deckCallCounter[side]++;
                     $.ajax({
-                        url: "/JSON/Identity/" + 'Crimson Dust' + "/" + element.title,
+                        url: "/JSON/Identity/" + 'Crimson Dust' + "/" + data[i].title,
                         dataType: "json",
                         async: true,
                         success: function(dataID) {
@@ -868,8 +880,12 @@
                         }
                     });
                 }
-            });
-
+            }
+            if (deckCallCounter[side] == 0 && deckHighLights[side].length == 0) {
+                $('#no-deckhightlight-'+side).removeClass('hidden');
+                $('#'+side+'-deck-highlights-spinner').removeClass('spinner');
+                $('#button-'+side+'-deck-highlights').addClass('hidden');
+            }
         }
 
         /*]]>*/
