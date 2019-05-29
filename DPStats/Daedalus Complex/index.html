@@ -62,6 +62,9 @@
                                 <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
                             </li>
                             <li>
+                                <a href="/DPStats/Downfall MWL 3.2/">Downfall MWL 3.2</a>
+                            </li>
+                            <li>
                                 <a href="/DPStats/Downfall/">Downfall</a>
                             </li>
                             <li>
@@ -780,9 +783,9 @@
             dpname = encodeURIComponent('Daedalus Complex');
 
         // hide deck card data in spotlight
-        if ('Daedalus Complex' === "Last 3 aggregated" || 'Daedalus Complex' === "D&D, post-MWL") {
+        if ('Daedalus Complex' === "Last 3 aggregated" || 'Daedalus Complex'.includes("MWL")) {
             $('#spot-deck-row').addClass('hidden');
-            $('#spot-hightlight-row').addClass('hidden');
+            //$('#spot-hightlight-row').addClass('hidden');
         }
 
         // redraw charts on window resize

@@ -62,6 +62,9 @@
                                 <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
                             </li>
                             <li>
+                                <a href="/DPStats/Downfall MWL 3.2/">Downfall MWL 3.2</a>
+                            </li>
+                            <li>
                                 <a href="/DPStats/Downfall/">Downfall</a>
                             </li>
                             <li>
@@ -780,9 +783,9 @@
             dpname = encodeURIComponent('Earth\'s Scion');
 
         // hide deck card data in spotlight
-        if ('Earth\'s Scion' === "Last 3 aggregated" || 'Earth\'s Scion' === "D&D, post-MWL") {
+        if ('Earth\'s Scion' === "Last 3 aggregated" || 'Earth\'s Scion'.includes("MWL")) {
             $('#spot-deck-row').addClass('hidden');
-            $('#spot-hightlight-row').addClass('hidden');
+            //$('#spot-hightlight-row').addClass('hidden');
         }
 
         // redraw charts on window resize

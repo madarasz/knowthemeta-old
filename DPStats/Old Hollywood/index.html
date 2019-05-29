@@ -62,6 +62,9 @@
                                 <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
                             </li>
                             <li>
+                                <a href="/DPStats/Downfall MWL 3.2/">Downfall MWL 3.2</a>
+                            </li>
+                            <li>
                                 <a href="/DPStats/Downfall/">Downfall</a>
                             </li>
                             <li>
@@ -780,9 +783,9 @@
             dpname = encodeURIComponent('Old Hollywood');
 
         // hide deck card data in spotlight
-        if ('Old Hollywood' === "Last 3 aggregated" || 'Old Hollywood' === "D&D, post-MWL") {
+        if ('Old Hollywood' === "Last 3 aggregated" || 'Old Hollywood'.includes("MWL")) {
             $('#spot-deck-row').addClass('hidden');
-            $('#spot-hightlight-row').addClass('hidden');
+            //$('#spot-hightlight-row').addClass('hidden');
         }
 
         // redraw charts on window resize

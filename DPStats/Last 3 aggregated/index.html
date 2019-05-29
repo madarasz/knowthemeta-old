@@ -62,6 +62,9 @@
                                 <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
                             </li>
                             <li>
+                                <a href="/DPStats/Downfall MWL 3.2/">Downfall MWL 3.2</a>
+                            </li>
+                            <li>
                                 <a href="/DPStats/Downfall/">Downfall</a>
                             </li>
                             <li>
@@ -204,9 +207,9 @@
     <div class="container">
         <h3>
             <div class="pull-right">
-                <a class="btn btn-xs btn-primary" href="/DPStats/Downfall">
+                <a class="btn btn-xs btn-primary" href="/DPStats/Downfall MWL 3.2">
                     <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                    <span>Downfall</span>
+                    <span>Downfall MWL 3.2</span>
                 </a>
                 
                 
@@ -777,9 +780,9 @@
             dpname = encodeURIComponent('Last 3 aggregated');
 
         // hide deck card data in spotlight
-        if ('Last 3 aggregated' === "Last 3 aggregated" || 'Last 3 aggregated' === "D&D, post-MWL") {
+        if ('Last 3 aggregated' === "Last 3 aggregated" || 'Last 3 aggregated'.includes("MWL")) {
             $('#spot-deck-row').addClass('hidden');
-            $('#spot-hightlight-row').addClass('hidden');
+            //$('#spot-hightlight-row').addClass('hidden');
         }
 
         // redraw charts on window resize

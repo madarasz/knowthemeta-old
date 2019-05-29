@@ -62,6 +62,9 @@
                                 <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
                             </li>
                             <li>
+                                <a href="/DPStats/Downfall MWL 3.2/">Downfall MWL 3.2</a>
+                            </li>
+                            <li>
                                 <a href="/DPStats/Downfall/">Downfall</a>
                             </li>
                             <li>
@@ -780,9 +783,9 @@
             dpname = encodeURIComponent('Kala Ghoda');
 
         // hide deck card data in spotlight
-        if ('Kala Ghoda' === "Last 3 aggregated" || 'Kala Ghoda' === "D&D, post-MWL") {
+        if ('Kala Ghoda' === "Last 3 aggregated" || 'Kala Ghoda'.includes("MWL")) {
             $('#spot-deck-row').addClass('hidden');
-            $('#spot-hightlight-row').addClass('hidden');
+            //$('#spot-hightlight-row').addClass('hidden');
         }
 
         // redraw charts on window resize
