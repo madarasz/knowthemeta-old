@@ -62,6 +62,9 @@
                                 <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
                             </li>
                             <li>
+                                <a href="/DPStats/Downfall MWL 3.3/">Downfall MWL 3.3</a>
+                            </li>
+                            <li>
                                 <a href="/DPStats/Downfall MWL 3.2/">Downfall MWL 3.2</a>
                             </li>
                             <li>
@@ -325,7 +328,7 @@
         // for faction
         } else if ('anarch' !== null) {
             $('#ids').removeClass('hidden');
-            var cardpools = ['Downfall MWL 3.2','Downfall','System Core 2019','Magnum Opus','R&R MWL 2.2','Reign and Reverie','Kampala Ascendent','Whispers in Nalubaale','The Devil and the Dragon','Council of the Crest','Down the White Nile','Sovereign Sight','Revised Core Set','Crimson Dust','Free Mars','Blood and Water','Earth\'s Scion','Terminal Directive','Station One','Daedalus Complex','Quorum','Martial Law','Intervention','Escalation','Blood Money','23 Seconds','Fear the Masses','The Liberated Mind','Salsette Island','Democracy and Dogma','Business First','Kala Ghoda','D&D, post-MWL','Data and Destiny','The Universe of Tomorrow','Old Hollywood','The Underway','Chrome City','Breaker Bay','The Valley','Order and Chaos','The Source','All That Remains','Up and Over'];
+            var cardpools = ['Downfall MWL 3.3','Downfall MWL 3.2','Downfall','System Core 2019','Magnum Opus','R&R MWL 2.2','Reign and Reverie','Kampala Ascendent','Whispers in Nalubaale','The Devil and the Dragon','Council of the Crest','Down the White Nile','Sovereign Sight','Revised Core Set','Crimson Dust','Free Mars','Blood and Water','Earth\'s Scion','Terminal Directive','Station One','Daedalus Complex','Quorum','Martial Law','Intervention','Escalation','Blood Money','23 Seconds','Fear the Masses','The Liberated Mind','Salsette Island','Democracy and Dogma','Business First','Kala Ghoda','D&D, post-MWL','Data and Destiny','The Universe of Tomorrow','Old Hollywood','The Underway','Chrome City','Breaker Bay','The Valley','Order and Chaos','The Source','All That Remains','Up and Over'];
             populateBuyersPacks(dataGeneral, "/JSON/Faction/" + cardpools[0] + "/" + 'anarch', 'faction', function () {
                 displayBuyersCards(dataGeneral,
                         displayAmazon(dataGeneral, 'amazon'))}, "/JSON/Tournament/" + 'runner' + "/Last%203%20aggregated", 'anarch');
