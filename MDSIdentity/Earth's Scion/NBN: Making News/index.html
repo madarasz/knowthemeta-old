@@ -62,6 +62,9 @@
                                 <a href="/DPStats/Last 3 aggregated/"><em>last 3 aggregated</em></a>
                             </li>
                             <li>
+                                <a href="/DPStats/Uprising Booster Pack/">Uprising Booster Pack</a>
+                            </li>
+                            <li>
                                 <a href="/DPStats/Downfall MWL 3.3/">Downfall MWL 3.3</a>
                             </li>
                             <li>
@@ -239,18 +242,18 @@
                             <div class="col-xs-8">
                                 <div class="hidden" id="last3">
                                     <span class="glyphicon glyphicon-stop last3-1"></span>
+                                    <a href="/MDSIdentity/Uprising Booster Pack/NBN: Making News">
+                                        <span>Uprising Booster Pack</span>
+                                    </a>
+                                    <br />
+                                    <span class="glyphicon glyphicon-stop last3-2"></span>
                                     <a href="/MDSIdentity/Downfall MWL 3.3/NBN: Making News">
                                         <span>Downfall MWL 3.3</span>
                                     </a>
                                     <br />
-                                    <span class="glyphicon glyphicon-stop last3-2"></span>
+                                    <span class="glyphicon glyphicon-stop last3-3"></span>
                                     <a href="/MDSIdentity/Downfall MWL 3.2/NBN: Making News">
                                         <span>Downfall MWL 3.2</span>
-                                    </a>
-                                    <br />
-                                    <span class="glyphicon glyphicon-stop last3-3"></span>
-                                    <a href="/MDSIdentity/Downfall/NBN: Making News">
-                                        <span>Downfall</span>
                                     </a>
                                 </div>
                                 <div class="hidden" id="legend"></div>
@@ -415,7 +418,7 @@
                         });
                         $('#legend').removeClass('hidden');
                     } else if ('Earth\'s Scion' === "Last 3 aggregated") {
-                        var cardpools = ['Downfall MWL 3.3','Downfall MWL 3.2','Downfall','System Core 2019','Magnum Opus','R&R MWL 2.2','Reign and Reverie','Kampala Ascendent','Whispers in Nalubaale','The Devil and the Dragon','Council of the Crest','Down the White Nile','Sovereign Sight','Revised Core Set','Crimson Dust','Free Mars','Blood and Water','Earth\'s Scion','Terminal Directive','Station One','Daedalus Complex','Quorum','Martial Law','Intervention','Escalation','Blood Money','23 Seconds','Fear the Masses','The Liberated Mind','Salsette Island','Democracy and Dogma','Business First','Kala Ghoda','D&D, post-MWL','Data and Destiny','The Universe of Tomorrow','Old Hollywood','The Underway','Chrome City','Breaker Bay','The Valley','Order and Chaos','The Source','All That Remains','Up and Over'];
+                        var cardpools = ['Uprising Booster Pack','Downfall MWL 3.3','Downfall MWL 3.2','Downfall','System Core 2019','Magnum Opus','R&R MWL 2.2','Reign and Reverie','Kampala Ascendent','Whispers in Nalubaale','The Devil and the Dragon','Council of the Crest','Down the White Nile','Sovereign Sight','Revised Core Set','Crimson Dust','Free Mars','Blood and Water','Earth\'s Scion','Terminal Directive','Station One','Daedalus Complex','Quorum','Martial Law','Intervention','Escalation','Blood Money','23 Seconds','Fear the Masses','The Liberated Mind','Salsette Island','Democracy and Dogma','Business First','Kala Ghoda','D&D, post-MWL','Data and Destiny','The Universe of Tomorrow','Old Hollywood','The Underway','Chrome City','Breaker Bay','The Valley','Order and Chaos','The Source','All That Remains','Up and Over'];
                         for (i=0; i < 3; i++) {
                             $('#legend').append($('<span>', {
                                 class: 'glyphicon glyphicon-stop',
@@ -441,13 +444,13 @@
                             stroke = '#FFF';
                             if ('Earth\'s Scion' === "Last 3 aggregated") {
                                 switch (element.cardpool) {
-                                    case 'Downfall MWL 3.3':
+                                    case 'Uprising Booster Pack':
                                         color = getIDcolor('nbn', 1, 4);
                                         break;
-                                    case 'Downfall MWL 3.2':
+                                    case 'Downfall MWL 3.3':
                                         color = getIDcolor('nbn', 2, 4);
                                         break;
-                                    case 'Downfall':
+                                    case 'Downfall MWL 3.2':
                                         color = getIDcolor('nbn', 3, 4);
                                         break;
                                 }
