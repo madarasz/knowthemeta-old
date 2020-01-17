@@ -337,7 +337,7 @@
                 <div class="alert alert-danger text-center top-buffer-big hidden" role="alert" id="low-matches">
                     Not enough match data
                 </div>
-                <div class="row hidden" id="win-overall-row">
+                <div class="row" id="win-overall-row">
                     <div class="col-md-6 col-md-offset-3 col-xs-12">
                         <h4 class="text-center" style="padding-bottom: 0.5em">
                             Side win rates
@@ -795,8 +795,8 @@
         }
 
         // enable side win rates from Uprising
-        if (46 > -1 && 47 - 46 > 46) {
-            $('#win-overall-row').removeClass('hidden');
+        if (46 == -1 || 47 - 46 < 47) {
+            $('#win-overall-row').addClass('hidden');
         }
 
         // redraw charts on window resize
@@ -822,8 +822,8 @@
                 }
             }
 
-            // most used cards
-            if ('Up and Over' !== "Last 3 aggregated" && 'Up and Over' !== "D&D, post-MWL" && 'Up and Over' !== "R&R MWL 2.2" && allDecks > 15) {
+            // most used cards, hide in case of last-3 and "MWL" metas
+            if ('Up and Over' !== "Last 3 aggregated" && !'Up and Over'.includes("MWL") && allDecks > 15) {
                 $.ajax({
                     url: "/JSON/Cards/" + side + "/" + dpname,
                     dataType: "json",
