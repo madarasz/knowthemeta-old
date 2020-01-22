@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Nero Severn: Information Broker - Uprising Booster Pack Know the Meta - Android: Netrunner</title>
+    <title>Silhouette: Stealth Operative - Uprising Know the Meta - Android: Netrunner</title>
     <meta name="description" content="Know the Meta - providing statistical information on the metagame of Android: Netrunner cardgame." />
     <meta name="keywords" content="Netrunner, Android, meta, cardgame, decks, cards, identities, factions, winning, top" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -222,9 +222,9 @@
             <a href="http://forum.stimhack.com/t/know-the-meta/6306"><img src="/static/img/social-stimhack.png" /></a>
         </div>
     </div>
-            <h3><a href="/DPStats/Uprising Booster Pack#decks"><span>Uprising Booster Pack</span></a> > </h3>
+            <h3><a href="/DPStats/Uprising#decks"><span>Uprising</span></a> > </h3>
             <h4>
-                <a id="title-id" class="hidden" href="/Cards/Nero Severn: Information Broker/"><span>Nero Severn: Information Broker</span></a>
+                <a id="title-id" class="hidden" href="/Cards/Silhouette: Stealth Operative/"><span>Silhouette: Stealth Operative</span></a>
                 <span id="title-faction" class="hidden">Criminal</span>
                 - <span id="deck_number"></span> decks
             </h4>
@@ -245,17 +245,17 @@
                             <div class="col-xs-8">
                                 <div class="hidden" id="last3">
                                     <span class="glyphicon glyphicon-stop last3-1"></span>
-                                    <a href="/MDSIdentity/Uprising/Nero Severn: Information Broker">
+                                    <a href="/MDSIdentity/Uprising/Silhouette: Stealth Operative">
                                         <span>Uprising</span>
                                     </a>
                                     <br />
                                     <span class="glyphicon glyphicon-stop last3-2"></span>
-                                    <a href="/MDSIdentity/Uprising Booster Pack/Nero Severn: Information Broker">
+                                    <a href="/MDSIdentity/Uprising Booster Pack/Silhouette: Stealth Operative">
                                         <span>Uprising Booster Pack</span>
                                     </a>
                                     <br />
                                     <span class="glyphicon glyphicon-stop last3-3"></span>
-                                    <a href="/MDSIdentity/Downfall MWL 3.3/Nero Severn: Information Broker">
+                                    <a href="/MDSIdentity/Downfall MWL 3.3/Silhouette: Stealth Operative">
                                         <span>Downfall MWL 3.3</span>
                                     </a>
                                 </div>
@@ -373,10 +373,10 @@
 
         if ('identity' === 'identity') {
             $('#title-id').removeClass('hidden');
-            filter = "Identity/" + encodeURIComponent('Uprising Booster Pack') + "/" + encodeURIComponent('Nero Severn: Information Broker');
+            filter = "Identity/" + encodeURIComponent('Uprising') + "/" + encodeURIComponent('Silhouette: Stealth Operative');
         } else {
             $('#title-faction').removeClass('hidden');
-            filter = "Faction/" + encodeURIComponent('Uprising Booster Pack') + "/" + encodeURIComponent('criminal');
+            filter = "Faction/" + encodeURIComponent('Uprising') + "/" + encodeURIComponent('criminal');
         }
 
         google.load('visualization', '1.0', {'packages':['corechart']});
@@ -415,19 +415,19 @@
                                 class: index == 0 ? 'glyphicon glyphicon-unchecked' : 'glyphicon glyphicon-stop',
                                 style: index == 0 ? 'color: black' : 'color: ' + element.color
                             }), $('<a>', {
-                                href: '/MDSIdentity/' + 'Uprising Booster Pack' + '/' + element.identity,
+                                href: '/MDSIdentity/' + 'Uprising' + '/' + element.identity,
                                 text: element.identity + ' (' + element.count + ')'
                             }), $('<br>'));
                         });
                         $('#legend').removeClass('hidden');
-                    } else if ('Uprising Booster Pack' === "Last 3 aggregated") {
+                    } else if ('Uprising' === "Last 3 aggregated") {
                         var cardpools = ['Uprising','Uprising Booster Pack','Downfall MWL 3.3','Downfall MWL 3.2','Downfall','System Core 2019','Magnum Opus','R&R MWL 2.2','Reign and Reverie','Kampala Ascendent','Whispers in Nalubaale','The Devil and the Dragon','Council of the Crest','Down the White Nile','Sovereign Sight','Revised Core Set','Crimson Dust','Free Mars','Blood and Water','Earth\'s Scion','Terminal Directive','Station One','Daedalus Complex','Quorum','Martial Law','Intervention','Escalation','Blood Money','23 Seconds','Fear the Masses','The Liberated Mind','Salsette Island','Democracy and Dogma','Business First','Kala Ghoda','D&D, post-MWL','Data and Destiny','The Universe of Tomorrow','Old Hollywood','The Underway','Chrome City','Breaker Bay','The Valley','Order and Chaos','The Source','All That Remains','Up and Over'];
                         for (i=0; i < 3; i++) {
                             $('#legend').append($('<span>', {
                                 class: 'glyphicon glyphicon-stop',
                                 style: 'color: ' + getIDcolor('criminal', i+1, 4)
                             }), $('<a>', {
-                                href: '/MDSIdentity/' + cardpools[i] + '/' + 'Nero Severn: Information Broker',
+                                href: '/MDSIdentity/' + cardpools[i] + '/' + 'Silhouette: Stealth Operative',
                                 text: cardpools[i]
                             }), $('<br>'));
                         }
@@ -445,7 +445,7 @@
                             color = "#3769cd";
                             size = (element.topdeck == true ? 8 : 5);
                             stroke = '#FFF';
-                            if ('Uprising Booster Pack' === "Last 3 aggregated") {
+                            if ('Uprising' === "Last 3 aggregated") {
                                 switch (element.cardpool) {
                                     case 'Uprising':
                                         color = getIDcolor('criminal', 1, 4);
